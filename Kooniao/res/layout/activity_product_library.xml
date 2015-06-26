@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout style="@style/topBarStyle" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/titlebar_backward_close_selector"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/product_library"
+            android:textColor="@color/v020202"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <include layout="@layout/sub_search_product_library_layout" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <include layout="@layout/sub_no_data" />
+
+    <include
+        android:id="@id/search_topbar"
+        layout="@layout/popup_search_quick_tips"
+        android:visibility="gone" />
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            android:id="@id/swipe_refresh_layout"
+            style="@style/baseLayoutMMStyle"
+            android:layout_above="@id/ll_save"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <ListView
+                android:id="@id/lv_product"
+                style="@style/normalListViewStyle"
+                android:layout_marginTop="20dp" />
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+
+        <LinearLayout
+            android:id="@id/ll_save"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/green_retancle_button_selector"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:drawableLeft="@drawable/choice_white"
+                android:drawablePadding="5dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_save_count"
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/save_count_zero"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

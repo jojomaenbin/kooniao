@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle" >
+
+    <include
+        android:id="@id/layout_store_a"
+        layout="@layout/view_store_a"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/layout_store_c"
+        layout="@layout/view_store_c"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@id/ll_switch_store"
+        style="@style/baseLayoutWWStyle"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/switch_store_button_selector"
+        android:contentDescription="@null" />
+    
+    <!-- 无店铺覆盖层 -->
+
+    <LinearLayout
+        android:id="@id/ll_has_no_store"
+        style="@style/baseLinearLayoutMMVerticalStyle"
+        android:background="@color/translucence_black_dark"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:contentDescription="@null"
+            android:src="@drawable/mask_has_no_store" />
+
+        <ImageView
+            android:id="@id/iv_open_a_store"
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/mask_set_up_store" />
+    </LinearLayout>
+
+</FrameLayout>

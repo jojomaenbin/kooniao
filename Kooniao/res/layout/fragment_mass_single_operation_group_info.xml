@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/white"
+    android:fadeScrollbars="false"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@color/white" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:padding="15dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/travel_unit"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_message_travel_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/travel_date"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_message_travel_date"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.kooniao.travel.customwidget.LinearListLayout
+            android:id="@id/ll_guide_list"
+            style="@style/baseLinearLayoutMWVerticalStyle" />
+
+        <com.kooniao.travel.customwidget.LinearListLayout
+            android:id="@id/ll_localguide_list"
+            style="@style/baseLinearLayoutMWVerticalStyle" />
+
+        <com.kooniao.travel.customwidget.LinearListLayout
+            android:id="@id/ll_drivers_list"
+            style="@style/baseLinearLayoutMWVerticalStyle" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/car_number"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_message_travel_car_number"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/adult"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_message_travel_adult_count"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/oldman"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_message_travel_oldman_count"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/children"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_message_travel_children_count"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/handicapped"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_message_travel_handicapped_count"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/soldier"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_message_travel_soldier_count"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/travel_number"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_message_travel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+</ScrollView>

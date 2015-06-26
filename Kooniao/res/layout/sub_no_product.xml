@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_product"
+        tools:ignore="RtlHardcoded" />
+
+</LinearLayout>

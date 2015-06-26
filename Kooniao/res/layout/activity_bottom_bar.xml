@@ -1,0 +1,28 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <FrameLayout
+        android:id="@id/fl_fragment_container"
+        style="@style/baseLayoutMMStyle" />
+
+    <com.kooniao.travel.customwidget.BottomLayout
+        android:id="@id/layout_bottom"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:layout_gravity="bottom" >
+
+        <include
+            android:id="@id/layout_bottom_travel_remind"
+            layout="@layout/sub_travel_remind"
+            android:visibility="gone" />
+
+        <com.kooniao.travel.customwidget.BottomLayout
+            android:id="@id/layout_bottom_bar"
+            style="@style/baseLayoutMWStyle" >
+
+            <include layout="@layout/sub_bottom_bar" />
+        </com.kooniao.travel.customwidget.BottomLayout>
+    </com.kooniao.travel.customwidget.BottomLayout>
+
+</merge>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/titlebar_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/store_product_manage"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_filter"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/filter_selector"
+            tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            android:id="@id/swipe_refresh_layout"
+            style="@style/baseLayoutMMStyle"
+            android:layout_above="@id/ll_add_product" >
+
+            <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+                <ListView
+                    android:id="@id/lv_product"
+                    style="@style/normalListViewStyle"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:id="@id/layout_no_data"
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/sub_no_product" />
+                </LinearLayout>
+            </RelativeLayout>
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+
+        <RelativeLayout
+            android:id="@id/ll_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blue_retancle_button_selector" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/add_white"
+                android:drawableStart="@drawable/add_white"
+                android:drawablePadding="5dp"
+                android:text="@string/add_product"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

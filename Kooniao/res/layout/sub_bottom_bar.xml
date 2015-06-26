@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+  >
+
+    <include layout="@layout/divider_line_full" />
+
+    <RadioGroup
+        android:id="@id/rg_bottom_bar"
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <RadioButton
+            android:id="@id/rb_bottom_bar_home"
+            style="@style/bottomBarRadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/bottom_bar_home_page_selector"
+            android:text="@string/home_page"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@id/rb_bottom_bar_store"
+            style="@style/bottomBarRadioButtonStyle"
+            android:drawableTop="@drawable/bottom_bar_store_selector"
+            android:text="@string/store"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@id/rb_bottom_bar_discovery"
+            style="@style/bottomBarRadioButtonStyle"
+            android:drawableTop="@drawable/bottom_bar_discovery_selector"
+            android:text="@string/discovery"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@id/rb_bottom_bar_around"
+            style="@style/bottomBarRadioButtonStyle"
+            android:drawableTop="@drawable/bottom_bar_around_selector"
+            android:text="@string/around"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@id/rb_bottom_bar_mine"
+            style="@style/bottomBarRadioButtonStyle"
+            android:drawableTop="@drawable/bottom_bar_mine_selector"
+            android:text="@string/mine"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>

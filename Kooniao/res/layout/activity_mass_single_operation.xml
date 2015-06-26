@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <ImageView
+            android:id="@id/iv_add"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/bottombar_add_travel_press"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:layout_toLeftOf="@id/iv_add"
+            android:layout_toRightOf="@id/iv_go_back" >
+
+            <TextView
+                android:id="@id/tv_single_operation_contact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contact"
+                android:textColor="@color/text_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/tv_single_operation_call_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/call_name"
+                android:textColor="@color/text_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/tv_single_operation_group_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/message_single"
+                android:textColor="@color/text_selector"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <FrameLayout
+        android:id="@id/fl_fragment_container"
+        style="@style/baseLayoutMMStyle"
+        android:background="@null" />
+
+</LinearLayout>

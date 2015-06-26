@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/rl_about_kooniao_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/inventory_pricing"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_set_distribution"
+            style="@style/baseLayoutWMStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/set_distribution"
+            android:textColor="@color/v16b8eb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <ScrollView style="@style/baseLayoutMMStyle" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:animateLayoutChanges="true" >
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/inventory_pricing_tips"
+                android:textColor="@color/v909090"
+                android:textSize="15sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_market_price"
+                    style="@style/baseLayoutWWStyle"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/market_price"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_market_unit"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:hint="@string/unit"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:maxLength="4"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_slash"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toLeftOf="@id/et_market_unit"
+                    android:layout_toStartOf="@id/et_market_unit"
+                    android:text="@string/slash"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_market_price"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_toEndOf="@id/tv_market_price"
+                    android:layout_toLeftOf="@id/tv_slash"
+                    android:layout_toRightOf="@id/tv_market_price"
+                    android:layout_toStartOf="@id/tv_slash"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:maxLength="8"
+                    android:inputType="numberDecimal" 
+                    android:hint="@string/please_input_market_price"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+
+                    <TextView
+                        android:id="@+id/tv_min_order"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_centerVertical="true"
+                        android:text="@string/min_order"
+                        android:textColor="@color/v020202"
+                        android:textSize="16sp" />
+
+                    <com.kooniao.travel.view.materialdesign.SwitchButton
+                        android:id="@+id/sb_min_order"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_min_order"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:inputType="numberSigned"
+                    android:hint="@string/please_input_min_order"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_bookable"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bookable_tips"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <com.kooniao.travel.view.materialdesign.SwitchButton
+                    android:id="@+id/sb_bookable"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_show_inventory"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/show_inventory"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <com.kooniao.travel.view.materialdesign.SwitchButton
+                    android:id="@+id/sb_show_inventory"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                style="@style/baseLayoutMWStyle"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_refund_handling"
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/refund_handling"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMWHorizontalStyle"
+                    android:layout_below="@id/tv_refund_handling"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_direct_return_inventory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/hollow_retangle_selector"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_direct_return_inventory"
+                            style="@style/baseLayoutWWStyle"
+                            android:text="@string/direct_return_inventory"
+                            android:textColor="@color/vd0d0d0"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_manual_return_inventory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/hollow_retangle_selector"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_manual_return_inventory"
+                            style="@style/baseLayoutWWStyle"
+                            android:text="@string/manual_return_inventory"
+                            android:textColor="@color/vd0d0d0"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/standard_product"
+                android:textColor="@color/v909090"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+            <include layout="@layout/item_product_standard" />
+
+            <LinearLayout
+                android:id="@+id/ll_product_standard_container"
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:animateLayoutChanges="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/divider_line_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_add_product_standard"
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:drawableLeft="@drawable/add_blue_round"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/add_blue_round"
+                    android:text="@string/add_product_standard"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_finish"
+                    style="@style/baseLayoutMWStyle"
+                    android:background="@drawable/gray_retangle_full_gray_bg"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/finish"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

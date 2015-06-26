@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <!-- titlebar -->
+
+    <RelativeLayout
+        android:id="@id/scenic_detail_layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/scenic_detail"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <!-- 底部操作bar -->
+
+    <include
+        android:id="@id/scenic_detail_layout_bottombar"
+        android:layout_alignParentBottom="true"
+        layout="@layout/sub_around_detail_bottombar_operate" />
+
+    <!-- 中间 -->
+
+    <ScrollView
+        android:id="@id/sv_middle"
+        style="@style/baseLayoutMMStyle"
+        android:layout_above="@id/scenic_detail_layout_bottombar"
+        android:layout_below="@id/scenic_detail_layout_titlebar"
+        android:fadeScrollbars="false"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <!-- 顶部封面图 -->
+
+            <include
+                android:id="@id/travel_detail_layout_cover"
+                layout="@layout/sub_around_detail_cover" />
+
+            <!-- 基本信息 -->
+
+            <com.kooniao.travel.customwidget.InfoDescView
+                android:id="@id/info_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/head_text_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/head_text_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/head_text_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/head_text_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/head_text_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+
+            <!-- 点评 -->
+
+            <include
+                android:id="@id/travel_detail_layout_comment"
+                layout="@layout/sub_travel_detail_comment" />
+
+            <!-- 附近资讯 -->
+
+            <include
+                android:id="@id/layout_around"
+                layout="@layout/sub_around_detail_around_list" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

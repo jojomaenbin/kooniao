@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMWStyle" >
+
+    <ImageView
+        android:id="@id/iv_travel_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@color/v31a9b6"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_default_cover" />
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shade_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/rb_around"
+            android:gravity="right"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="@string/rmb"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@id/tv_travel_cost"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:maxEms="16"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@id/rb_around"
+            style="@style/CustomRatingBarSmall"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:paddingBottom="10dp"
+            android:rating="5" />
+    </RelativeLayout>
+
+</FrameLayout>

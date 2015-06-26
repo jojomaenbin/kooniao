@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/store_client_manage"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_store"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/open_a_store_selector" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <com.kooniao.travel.customwidget.TitleBarTab
+        android:id="@id/title_bar_tab"
+        style="@style/baseLayoutMWStyle" />
+
+    <include layout="@layout/divider_line_full" />
+
+    <FrameLayout
+        android:id="@id/fl_fragment_container"
+        style="@style/baseLayoutMMStyle" />
+
+</LinearLayout>

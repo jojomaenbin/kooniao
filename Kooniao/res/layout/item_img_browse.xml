@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/full_image_root"
+    style="@style/baseLayoutMMStyle"
+    android:background="@android:color/background_dark" >
+
+    <com.kooniao.travel.customwidget.scaleimage.TouchImageView
+        android:id="@id/full_image"
+        style="@style/baseLayoutMMStyle"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@id/iv_list_default"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/v5d7785"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/list_default_cover" />
+
+    <ProgressBar
+        android:id="@id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

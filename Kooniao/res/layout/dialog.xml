@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMMStyle"
+    android:background="#55000000"
+    android:padding="32dp" >
+
+    <LinearLayout
+        android:id="@id/contentDialog"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_background"
+        android:padding="24dp" >
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginBottom="24dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@id/message"
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginBottom="24dp"
+            android:autoLink="email|phone|web"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@id/ll_dialog_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="Orientation" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:gravity="right" >
+
+            <com.kooniao.travel.view.materialdesign.ButtonFlat
+                android:id="@id/button_cancel"
+                style="@style/baseLayoutWWStyle"
+                android:background="#000"
+                android:text="@string/cancel" />
+
+            <com.kooniao.travel.view.materialdesign.ButtonFlat
+                android:id="@id/button_accept"
+                style="@style/baseLayoutWWStyle"
+                android:background="#1E88E5"
+                android:text="@string/accept" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

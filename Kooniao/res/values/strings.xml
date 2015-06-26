@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">酷鸟</string>
+    <string name="action_settings">设置</string>
+    <string name="canceled">已取消</string>
+    <string name="cancel">取消</string>
+    <string name="accept">确定</string>
+    <string name="rmb">￥</string>
+    <string name="from">来自</string>
+    <string name="no_more_data">没有更多数据了~</string>
+    <string name="is_loading">正在加载&#8230;</string>
+    <string name="loading_finish">加载完成</string>
+    <string name="collect_fail">收藏失败</string>
+    <string name="commit_order_review_fail">提交订单点评失败</string>
+    <string name="add_collect_success">添加收藏成功</string>
+    <string name="cancel_collect_success">取消收藏成功</string>
+    <string name="load_hot_city_list_fail">获取热门城市列表失败</string>
+    <string name="move_and_scale">移动和缩放</string>
+    <string name="share">分享</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="call">呼叫</string>
+    <string name="net_err">网络出错，请检查网络设置</string>
+    <string name="no_big_img">没有大图</string>
+    <string name="receive">接收</string>
+    <string name="confuse">拒绝</string>
+    <string name="handle">处理：</string>
+
+    <!-- 发现 -->
+    <string name="starting">出发地</string>
+    <string name="recommend_tips">以下是酷鸟推荐线路</string>
+    <string name="load_current_travel_fail">获取当前行程失败</string>
+    <string name="load_travel_list_fail">获取行程列表失败</string>
+    <string name="love">想去</string>
+    <string name="download">下载</string>
+    <string name="downloading">正在下载</string>
+    <string name="add_travel">添加行程</string>
+    <string name="look_comment">查看点评</string>
+    <string name="travel_comment_reply">回复评论</string>
+    <string name="commit_comment_success">提交评论成功</string>
+    <string name="commit_comment_fail">提交评论失败</string>
+    <string name="travel_feedback">行程反馈</string>
+    <string name="travel_route">行程线路</string>
+    <string name="travel_service">行程服务</string>
+    <string name="travel_food">行程餐饮</string>
+    <string name="submit">提交</string>
+    <string name="user_comment">用户点评</string>
+    <string name="look_travel_rating">查看行程评分</string>
+    <string name="travel_plan">行程规划</string>
+    <string name="hint_comment">至少吐槽10个字嘛</string>
+    <string name="hint_cancel">请简单描述取消订单的原因</string>
+    <string name="comment_max_count">400</string>
+    <string name="comment_publish">发表</string>
+    <string name="qrcode_share">扫二维码分享该行程</string>
+    <string name="mine_travel">我的行程</string>
+    <string name="please_input_correct_date">请输入正确的日期</string>
+    <string name="sure_delete_travel">确定要删除该条行程吗？</string>
+    <string name="starting_today">今日出发</string>
+    <string name="download_fail">下载失败</string>
+    <string name="load_mine_travel_list_fail">获取我的行程失败</string>
+    <string name="delete_mine_travel_fail">删除我的行程失败</string>
+    <string name="set_mine_travel_date_fail">设置行程时间失败</string>
+    <string name="set_current_travel_fail">设置当前行程失败</string>
+    <string name="cancel_current_travel_fail">取消当前行程失败</string>
+    <string name="setting_travel_fail">设置行程失败</string>
+    <string name="load_travel_detail_fail">获取行程详情失败</string>
+    <string name="download_offline_fail">下载离线失败</string>
+    <string name="check_offline_update_fail">检查离线更新失败</string>
+    <string name="load_rollcall_list_fail">获取点名列表失败</string>
+    <string name="very_satisfaction">非常满意</string>
+    <string name="satisfaction">满意</string>
+    <string name="gernal_satisfaction">一般</string>
+    <string name="yawp">不满意</string>
+    <string name="very_yawp">非常不满意</string>
+    <string name="travel_detail">行程详细</string>
+    <string name="scenic_detail">景点详细</string>
+    <string name="hotel_detail">酒店详细</string>
+    <string name="food_detail">美食详细</string>
+    <string name="amusement_detail">娱乐详细</string>
+    <string name="event_detail">事件详细</string>
+    <string name="traffic_detail">交通详细</string>
+    <string name="shopping_detail">购物详细</string>
+    <string name="to_the_top">返回顶部</string>
+    <string name="ta_line">TA的线路</string>
+    <string name="travel_detail_fee">费用说明</string>
+    <string name="around_maps">附近节点地图</string>
+    <string name="qrcode_scan_request_fail">二维码扫描请求错误</string>
+    <string name="travel_state_finish">已结束</string>
+    <string name="travel_state_ing">进行中</string>
+    <string name="travel_state_dns">未开始</string>
+    <string name="travel_state_ns">待出游</string>
+
+    <!-- 城市列表 -->
+    <string name="please_select_city">请选择出发城市</string>
+
+    <!-- 类型 -->
+    <string name="lifestyle">吃喝玩乐</string>
+    <string name="hotel">酒店</string>
+    <string name="food">美食</string>
+    <string name="amusement">娱乐</string>
+    <string name="shopping">购物</string>
+    <string name="scenic">景点</string>
+    <string name="travel">行程</string>
+    <string name="location_ticket_type">景点门票</string>
+
+    <!-- 订单详细 -->
+    <string name="order">订单</string>
+    <string name="order_detail">订单详细</string>
+    <string name="count">数量：</string>
+    <string name="order_way">预订方式：</string>
+    <string name="order_price">订单价格：</string>
+    <string name="order_product_code">产品编号：</string>
+    <string name="order_num">订单号：</string>
+    <string name="order_buy_time">预订日期：</string>
+    <string name="order_start_date">出发日期：</string>
+    <string name="selected_date">所选日期：</string>
+    <string name="order_people_count">出游人数：</string>
+    <string name="order_come_from">订单来自于</string>
+    <string name="spread_shop">传播店</string>
+    <!-- 处理中 -->
+    <string name="order_status_tips_handling">工作人员正在进行确认，请耐心等待</string>
+    <!-- 已取消、已关闭、已确认、已收款、已退订 -->
+    <string name="order_status_tips_consult_customer">如有问题请咨询客服</string>
+    <!-- 部分收款 -->
+    <string name="order_status_tips_part_of_collection">准备出团，如有问题请咨询客服</string>
+    <!-- 已出团 -->
+    <string name="order_status_tips_have_a_ball">祝出游愉快，如有问题请咨询客服</string>
+
+    <!-- 底部栏 -->
+    <string name="home_page">首页</string>
+    <string name="store">店铺</string>
+    <string name="discovery">发现</string>
+    <string name="around">附近</string>
+    <string name="mine">我的</string>
+    <string name="line">线路</string>
+    <string name="category_scenic">景点门票</string>
+    <string name="category_shopping">购物优惠</string>
+    <string name="category_amusement">休闲娱乐</string>
+    <string name="category_food">餐饮美食</string>
+    <string name="category_traffic">交通</string>
+    <string name="category_group_product">组合产品</string>
+    <string name="combine_product_desc">组合介绍</string>
+    <string name="double_click_to_exit">再按一次退出程序</string>
+    <string name="product_desc">产品介绍</string>
+
+    <!-- 首页 -->
+    <string name="default_city_gz">广州</string>
+    <string name="scan_tips">扫线路对应的二维码</string>
+    <string name="flicking">扫一扫</string>
+    <string name="my_store">我的店铺</string>
+    <string name="load_ad_list_fail">获取广告列表失败</string>
+    <string name="load_product_list_fail">获取产品列表失败</string>
+    <string name="unit_point">分</string>
+    <string name="unit_person">人</string>
+
+    <!-- 搜索 -->
+    <string name="search">搜索</string>
+    <string name="relevant_line">相关的线路</string>
+    <string name="relevant_group_product">相关的组合产品</string>
+    <string name="relevant_hotel">相关的酒店</string>
+    <string name="relevant_location_ticket">相关的景点门票</string>
+    <string name="relevant_food">相关的餐饮美食</string>
+    <string name="relevant_shopping">相关的购物优惠</string>
+    <string name="relevant_amusement">相关的休闲娱乐</string>
+    <string name="relevant_traffic">相关的交通</string>
+    <string name="please_input_search_keywords">请输入正确搜索关键字</string>
+    <string name="product_search_hint">请输入产品名\\线路名\\目的地</string>
+
+    <!-- 产品详细 -->
+    <string name="product_detail">产品详细</string>
+    <string name="reserve_attention">预订须知</string>
+    <string name="product_comment">评价</string>
+    <string name="product_select">选择：套餐/时间/人数</string>
+    <string name="detail">详情</string>
+    <string name="load_product_detail_fail">获取产品详情失败</string>
+    <string name="load_product_comments_fail">获取产品评论列表失败</string>
+    <string name="load_product_lists_fail">获取产品列表失败</string>
+    <string name="call_customer_service">拨打客服电话</string>
+    <string name="customer_service_null">没有客服电话</string>
+    <string name="dial">拨打</string>
+    <string name="product_reserve_now">立即预订</string>
+
+    <!-- 产品管理 -->
+    <string name="delete">删除</string>
+    <string name="grounding">上架</string>
+    <string name="sloadout">下架</string>
+    <string name="all">全部</string>
+    <string name="type_all">全部分类</string>
+    <string name="status_in_the_sale">在售中</string>
+    <string name="status_all">所有产品</string>
+    <string name="status_have_the_shelf">已下架</string>
+    <string name="add_product">添加产品</string>
+    <string name="commission_description">返佣说明</string>
+    <string name="commission_desc_tips">返佣按成交金额</string>
+    <string name="commission_desc_tips_one">按每个产品</string>
+    <string name="commission_desc_tips_two">元返佣</string>
+
+    <!-- 产品库 -->
+    <string name="product_library">分销库</string>
+    <string name="save">保存</string>
+    <string name="added_product_empty">您未选择产品</string>
+    <string name="save_count_zero">(0)</string>
+
+    <!-- 店铺 -->
+    <string name="store_order">店铺订单</string>
+    <string name="store_sale_statistics">销售统计</string>
+    <string name="store_product_manage">产品管理</string>
+    <string name="store_enter">进入店铺</string>
+    <string name="store_commission_manage">佣金管理</string>
+    <string name="store_client_manage">客户管理</string>
+    <string name="store_message">店铺消息</string>
+    <string name="swtich_store">切换店铺</string>
+    <string name="store_setting">店铺设置</string>
+    <string name="store_logo">店铺LOGO</string>
+    <string name="store_bg">店铺背景图</string>
+    <string name="store_name">店铺名称</string>
+    <string name="store_contact_phone">联系电话</string>
+    <string name="load_store_info_fail">获取店铺信息失败</string>
+    <string name="load_store_order_fail">获取订单列表失败</string>
+    <string name="has_no_contact_phone">暂无联系方式</string>
+    <string name="load_store_fail">获取店铺失败</string>
+    <string name="store_status_pause">旅游店铺已暂停营业</string>
+    <string name="store_status_pause_reson">原因：</string>
+    <string name="update_store_info_fail">修改店铺信息失败</string>
+    <string name="open_store">开店</string>
+    <string name="hint_open_store_name">店铺名称</string>
+    <string name="hint_open_store_contact_phone">手机号码(获取佣金凭证之一)</string>
+    <string name="please_input_store_name">给店铺一个名字吧！</string>
+    <string name="please_input_store_contact_phone">请输入11位手机号！</string>
+    <string name="open_store_success">开店成功</string>
+    <string name="open_store_tips_one">已阅读并同意店铺</string>
+    <string name="open_store_agreement">使用协议</string>
+
+    <!-- 订单查看管理 -->
+    <string name="order_check">订单查看</string>
+    <string name="order_manage">订单管理</string>
+    <string name="order_number">订单号：</string>
+    <string name="order_status_cacelled">已取消</string>
+    <string name="order_status_confirm">已确认</string>
+    <string name="order_status_part_collection">部分收款</string>
+    <string name="processing">处理中</string>
+    <string name="confirmed">已确认</string>
+    <string name="closed">已关闭</string>
+    <string name="money_receipt">全部收款</string>
+    <string name="unsubcribed">已退订</string>
+    <string name="have_a_ball">已出团</string>
+    <string name="part_of_collection">部分收款</string>
+    <string name="distribution">分销&#160;&#160;</string>
+    <string name="update_order_status">更改订单状态</string>
+    <string name="update_order_status_success">更改订单状态成功</string>
+    <string name="none">无</string>
+    <string name="no_related_data">暂无相关数据！</string>
+
+    <!-- 统计 -->
+    <string name="store_in_sale_statistics">店铺销售统计</string>
+    <string name="product_in_sale_statistics">产品销售统计</string>
+    <string name="order_statistics">订单总计：</string>
+    <string name="commission_statistics">佣金总计：</string>
+    <string name="order_turnover">共成交订单：</string>
+    <string name="commission_turnover">共成交金额：</string>
+    <string name="today">今天</string>
+    <string name="seven_day">7天</string>
+    <string name="thirty_day">30天</string>
+    <string name="order_count">订单数：</string>
+    <string name="commission_total">合计佣金：</string>
+    <string name="self_statistics">自销统计</string>
+    <string name="store_statistics_total">店铺总销</string>
+    <string name="store_distribution">分销店铺</string>
+    <string name="product_distribution">分销产品</string>
+    <string name="actual_order_count">实际成单量：</string>
+    <string name="actual_turnover">实际成交金额：</string>
+
+    <!-- 用户 -->
+    <string name="user_key_empty">用户名不能为空</string>
+    <string name="user_key_short">用户名太短了</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="nickname_empty">昵称不能为空</string>
+    <string name="nickname_length_too_short">昵称太短了</string>
+    <string name="input_nickname">请输入昵称</string>
+    <string name="email_empty">邮箱不能为空</string>
+    <string name="verification_code_empty">验证码不能为空</string>
+    <string name="phone_num_empty">手机号不能为空</string>
+    <string name="phone_num_form_wrong">请输入正确的手机号</string>
+    <string name="user_password_empty">密码不能为空</string>
+    <string name="password_short">密码太短了</string>
+    <string name="login_fail_tips">帐号或密码错误，请重新输入。</string>
+    <string name="email_format_wrong">邮箱格式错误</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="register_fail">注册失败</string>
+    <string name="register_success">注册成功</string>
+    <string name="no_login">未登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="nickname">昵称</string>
+    <string name="update_nickname">修改昵称</string>
+    <string name="update_nickname_success">更改昵称成功</string>
+    <string name="unbound">未绑定</string>
+    <string name="hint_login_user_name">昵称、手机号、邮箱地址</string>
+    <string name="hint_reset_key">输入邮箱或手机号码</string>
+    <string name="hint_input_email">输入邮箱</string>
+    <string name="hint_input_phone">输入手机号码</string>
+    <string name="hint_input_validate_code">输入验证码</string>
+    <string name="hint_login_user_password">请输入密码</string>
+    <string name="hint_login_user_new_password">输入新密码</string>
+    <string name="hint_register_key">昵称(3&#8211;10位的中英文、数字和下划线)</string>
+    <string name="hint_register_password">密码(6&#8211;16个字符)</string>
+    <string name="hint_register_email">邮箱地址</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register_email">邮箱注册</string>
+    <string name="register_phone">手机注册</string>
+    <string name="user_register_bottom">我已阅读并同意</string>
+    <string name="user_aggrement">用户协议</string>
+    <string name="perfect_user_info">完善个人资料</string>
+    <string name="skip">跳过</string>
+    <string name="avatar">头像</string>
+    <string name="sex">性别</string>
+    <string name="sex_colon">性别：</string>
+    <string name="user_type_select">我是导游\\计调\\达人组</string>
+    <string name="apply_now">马上申请</string>
+    <string name="user_type_select_tips">申请成为导游\\计调可享更多资源服务</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+    <string name="user_type_apply">导游/计调申请</string>
+    <string name="select_type_wrong_tips">请选择您的类别</string>
+    <string name="select_type">选择您的类别</string>
+    <string name="real_name">真实姓名</string>
+    <string name="hint_input_real_name">填写您的真实姓名</string>
+    <string name="certification_num">资格证号</string>
+    <string name="phone_num">电话号码</string>
+    <string name="hint_input_certification_num">填写您的资格证号</string>
+    <string name="hint_input_phone_num">填写您的手机号</string>
+    <string name="submit_application">提交申请</string>
+    <string name="reset_password">重设密码</string>
+    <string name="bound_accound">账号绑定</string>
+    <string name="next_step">下一步</string>
+    <string name="finish">完成</string>
+    <string name="input_email_phone">输入邮箱或手机号</string>
+    <string name="reset_password_phone">手机重设密码</string>
+    <string name="get_validate_code">获取验证码</string>
+    <string name="validate_code">验证码</string>
+    <string name="input_validate_code">输入验证码</string>
+    <string name="reset_password_email">邮箱重设密码</string>
+    <string name="email_add">邮箱：</string>
+    <string name="phone">电话：</string>
+    <string name="id_num">ID号：</string>
+    <string name="logout_fail">退出登录失败</string>
+    <string name="rollcall_operation_fail">操作点名名单失败</string>
+    <string name="delete_rollcall_fail">删除点名名单失败</string>
+    <string name="delete_user_fail">删除联系人失败</string>
+    <string name="operate_fail">操作失败</string>
+    <string name="load_agreement_fail">获取协议失败</string>
+    <string name="china_code">+86</string>
+    <string name="hint_phone_num">手机号码</string>
+    <string name="bound_email">绑定邮箱</string>
+    <string name="bound_phone">绑定手机</string>
+    <string name="bound_email_tips_one">绑定邮箱链接已经</string>
+    <string name="reset_password_email_tips_one">重设密码链接已经</string>
+    <string name="reset_password_email_tips_two">发送到你的邮箱</string>
+
+    <!-- 角色申请 -->
+    <string name="load_role_list_fail">获取角色列表失败</string>
+    <string name="type_for_select">类别选择</string>
+    <string name="submit_success">角色申请提交成功，请等待相关人员的审核通知</string>
+    <string name="wait_for_review">等待审核</string>
+
+    <!-- 我的 -->
+    <string name="click_to_login">点击登录</string>
+    <string name="collect">收藏</string>
+    <string name="offline">离线</string>
+    <string name="mine_order_form">我的订单</string>
+    <string name="message">消息</string>
+    <string name="setting">设置</string>
+    <string name="look_all_buy_product">查看全部已购宝贝</string>
+    <string name="alarm_accept">接收</string>
+    <string name="alarm_not_accept">不接收</string>
+    <string name="alarm_change">接收行程推送</string>
+    <!-- 设置 -->
+    <string name="personal_data">个人资料</string>
+    <string name="has_no_login">未登录</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="accept_to_clear_cache">确定清理这些缓存吗？</string>
+    <string name="sofware_rating">软件评分</string>
+    <string name="about_kooniao">关于酷鸟</string>
+    <string name="logout_tips">是否退出登录？</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_success">退出登录成功</string>
+    <string name="default_cache_size">0MB</string>
+    <!-- 关于 -->
+    <string name="version_update">版本更新</string>
+    <string name="check_version_fail">获取版本失败</string>
+    <string name="last_version">已是最新版本</string>
+    <string name="has_new_version">有新版本，请更新</string>
+    <string name="offical_websize">官网&#160;|</string>
+    <string name="service_agreement">&#160;服务协议&#160;|</string>
+    <string name="webchat">&#160;微信</string>
+    <string name="copyright">Copyright © 2014 Kooniao</string>
+    <!-- 个人资料 -->
+    <string name="i_am">我是</string>
+    <string name="get_user_personal_data_err">获取个人资料失败</string>
+    <string name="select_sex">性别选择</string>
+    <string name="update_user_info_err">更改用户信息失败</string>
+    <string name="update_user_info_success">更改用户信息成功</string>
+    <string name="avatar_modify">头像修改</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_photo_from_gallery">从相册选择</string>
+    <string name="update_user_avatar_success">更改用户头像成功</string>
+    <!-- 我的收藏 -->
+    <string name="sure_delete_collect">确定要删除该条收藏吗？</string>
+
+    <!-- 店铺设置 -->
+    <string name="update_store_logo_success">更改店铺logo成功</string>
+    <string name="update_store_bg_success">更改店铺背景成功</string>
+    <string name="update_store_name_success">更改店铺名称成功</string>
+    <string name="update_store_contact_phone_success">更改店铺联系方式成功</string>
+    <string name="edit_store_name">修改店铺名称</string>
+    <string name="edit_contact_phone">修改联系电话</string>
+    <string name="input_store_name">请输入店铺名</string>
+    <string name="input_store_contact_phone">请输入联系方式</string>
+    <string name="i_want_to_open_a_store">我要开店</string>
+    <string name="add_product_right_now">马上添加</string>
+
+    <!-- 浏览器 -->
+    <string name="loading">正在加载&#046;&#046;&#046;</string>
+
+    <!-- 产品预订 -->
+    <string name="product_booking">产品预订</string>
+    <string name="product_booking_write">填写订单</string>
+    <string name="product_booking_tips_one">1.选择出游日期和出游人数；</string>
+    <string name="product_booking_tips_two">2.填写您的姓名和手机号，提交预订；</string>
+    <string name="product_booking_tips_three">3.等待客服与您联系，确认最终的订单金额；</string>
+    <string name="product_booking_tips_four">4.网上付款或前往当地门市付款，享受开心出游。</string>
+    <string name="number_of_people">人数</string>
+    <string name="adult">成人</string>
+    <string name="child">儿童</string>
+    <string name="please_chose_start_date">请选择出发日期</string>
+    <string name="contacts_colon">联系人：</string>
+    <string name="contacts">联系人</string>
+    <string name="name">姓名</string>
+    <string name="name_hint">联系人姓名（必填）</string>
+    <string name="please_input_contact_name">请填写联系人姓名</string>
+    <string name="mobile">手机</string>
+    <string name="mobile_colon">手机：</string>
+    <string name="mobile_hint">手机号（必填）</string>
+    <string name="please_input_contact_mobile">请填写手机号</string>
+    <string name="mobile_num">手机号</string>
+    <string name="mobile_num_colon">手机号：</string>
+    <string name="email_contact">邮箱</string>
+    <string name="email_contact_colon">邮箱：</string>
+    <string name="email_contact_hint">用于接收确认订单（必填）</string>
+    <string name="participant">参与人</string>
+    <string name="participant_info">参与人信息</string>
+    <string name="participant_name">参与人姓名</string>
+    <string name="input_participant">填写参与人信息</string>
+    <string name="order_count_pice">x1</string>
+    <string name="order_submit">提交订单</string>
+    <string name="name_adult">姓名（成人）</string>
+    <string name="name_child">姓名（儿童）</string>
+    <string name="certificate_type">证件类型</string>
+    <string name="certificate_type_id_card">身份证</string>
+    <string name="certificate_type_passport">护照</string>
+    <string name="certificate_type_other">其他</string>
+    <string name="update_certificate_type">更改证件类型</string>
+    <string name="certificate_code">证件号码</string>
+    <string name="total_money">总计：</string>
+    <string name="submit_order_fail">提交订单失败</string>
+    <string name="load_product_package_fail">获取产品套餐错误</string>
+    <string name="product_book_complete">预订已提交</string>
+    <string name="go_back_home_page">返回首页</string>
+    <string name="visit_store">访问店铺</string>
+    <string name="see_order">查看订单</string>
+    <string name="see_order_detail">查看订单详情</string>
+    <string name="book_contact_name">预订人姓名</string>
+    <string name="book_contact_mobile">预订人手机号码</string>
+    <string name="book">预订</string>
+    <string name="way_book_colon">预订方式：</string>
+    <string name="way_book">预订方式</string>
+    <string name="full_booking">全额预订</string>
+    <string name="full_booking_colon">全额预订：</string>
+    <string name="full_booking_tips">全额预订，方便快捷！</string>
+    <string name="reservation">订金预订</string>
+    <string name="reservation_colon">订金预订：</string>
+    <string name="reservation_tips">订金预订，安全体贴！</string>
+    <string name="select_package">选择套餐</string>
+    <string name="package_classify">套餐分类</string>
+    <string name="please_input_correct_email_address">请输入正确邮箱地址</string>
+    <string name="seller_message">给卖家留言</string>
+
+    <!-- 我的订单 -->
+    <string name="comment">点评</string>
+    <string name="load_order_detail_fail">获取订单详细失败</string>
+
+    <!-- 产品管理 -->
+    <string name="commission_desc">返佣：</string>
+    <string name="commission_desc_per">元/人</string>
+    <string name="operate_delete_success">删除成功</string>
+    <string name="operate_added_success">上架成功</string>
+    <string name="operate_shelves_success">下架成功</string>
+    <string name="productcategory">产品分类</string>
+    <string name="checkfirst">选择产品种类</string>
+    <string name="checksecond">选择产品类目</string>
+    <string name="checkthird">选择三级类型</string>
+    <string name="group_product">组合产品</string>
+    <string name="line_product">线路产品</string>
+    <string name="single_product">单一产品</string>
+    <string name="find_resource">找资源</string>
+    <string name="no_date">暂无</string>
+    <string name="please_check">请选择</string>
+    <string name="category">分类</string>
+    <string name="product_info">产品信息</string>
+    <string name="product_quote">+引用</string>
+    <string name="product_name">名称</string>
+    <string name="product_inputname">请输入产品名称</string>
+    <string name="product_phone">联系电话</string>
+    <string name="product_inputphone">请输入产品服务电话</string>
+    <string name="product_introduce">产品介绍</string>
+    <string name="product_edit">编辑</string>
+    <string name="product_type">产品类型</string>
+    <string name="product_seeable">是否可见</string>
+    <string name="product_putawayable">是否上架</string>
+    <string name="product_putaway_time">上下架时间</string>
+    <string name="product_starttime">起始时间</string>
+    <string name="product_to">至</string>
+    <string name="product_endtime">结束时间</string>
+    <string name="product_otherinfo">其他信息</string>
+    <string name="product_bourn">目的地</string>
+    <string name="product_addaddress">添加目的地</string>
+    <string name="product_editgroup">产品搭配（将你的产品完美结合，独具特色）</string>
+    <string name="product_starlevel">景点星级</string>
+    <string name="product_number">产品编号</string>
+    <string name="product_editnumber">请自定义产品编号</string>
+    <string name="product_opentime">营业时间</string>
+    <string name="product_eidtopentime">请输入产品营业时间</string>
+    <string name="product_tabs">产品标签</string>
+    <string name="product_edittabs">请输入产品标签</string>
+    <string name="product_catalog">产品目录</string>
+    <string name="product_edit_catalog">请选择产品所属目录</string>
+    <string name="product_address">产品地址</string>
+    <string name="product_inputaddress">请输入产品所在地址</string>
+    <string name="product_default">移动端默认展示页</string>
+    <string name="product_choose_address">选择目的地</string>
+    <string name="product_input_tabs">输入标签</string>
+    <string name="product_newaddcatalogs">新建目录组</string>
+    <string name="product_showable">是否显示</string>
+    <string name="product_catalogs_name">目录组名称</string>
+    <string name="product_catalog_tag">目录备注</string>
+    <string name="product_input_catalogs_name">请输入目录组名称</string>
+    <string name="product_add">添加</string>
+    <string name="product_editstring">产品编辑</string>
+
+    <!-- 收藏 -->
+    <string name="my_collect">我的收藏</string>
+    <string name="collected_in">收藏于</string>
+    <string name="product">产品</string>
+
+    <!-- 产品库 -->
+    <string name="select">选择</string>
+    <string name="add_product_success">添加产品成功</string>
+    <string name="save_product_title">保存产品</string>
+    <string name="hint_search_product">搜索产品</string>
+    <string name="save_product_tips">有未保存的产品，是否保存？</string>
+
+    <!-- 佣金管理 -->
+    <string name="pay_commission">支付佣金</string>
+    <string name="total_sell">共销出</string>
+    <string name="per_order">张订单</string>
+    <string name="load_commission_fail">获取佣金列表失败</string>
+
+    <!-- 支付佣金 -->
+    <string name="pay_commission_detail">付款详细</string>
+    <string name="pay_commission_date">支付日期</string>
+    <string name="pay_commission_way">支付方式</string>
+    <string name="pay_commission_amount">支付金额</string>
+    <string name="remark">备注</string>
+    <string name="pay_commission_way_offline">线下支付</string>
+    <string name="pay_commission_way_system">系统入账</string>
+    <string name="pay_commission_amount_hint">请输入支付金额</string>
+    <string name="pay_commission_amount_residue">还剩</string>
+    <string name="need_to_pay">需要支付</string>
+    <string name="remark_hint">请输入备注信息</string>
+    <string name="payment">付款</string>
+    <string name="payment_fail">付款失败</string>
+    <string name="payment_success">付款成功</string>
+
+    <!-- 佣金详细 -->
+    <string name="commission_detail">佣金详细</string>
+    <string name="order_sell_total">共销出订单：</string>
+    <string name="closecontract">已结算：</string>
+    <string name="for_the_account">待结算：</string>
+    <string name="for_the_account_detail">已结算详细</string>
+    <string name="pay_commission_date_colon">支付日期：</string>
+    <string name="pay_commission_way_colon">支付方式：</string>
+    <string name="pay_commission_amount_colon">支付金额：</string>
+    <string name="remark_colon">备注：</string>
+
+    <!-- 客户管理 -->
+    <string name="store_client">客户</string>
+    <string name="distributor">分销商</string>
+    <string name="store_client_detail">客户详细页</string>
+    <string name="booking_date">预订日期：</string>
+    <string name="load_client_fail">获取客户列表失败</string>
+
+    <!-- 附近 -->
+    <string name="around_empty_data_tips">你已漫游到火星，暂未找到相关地点</string>
+    <string name="refference_price">参考价格</string>
+    <string name="around_scenic">附近的景点</string>
+    <string name="scenic_tips">景点贴士</string>
+    <string name="merchant_tips">商家贴士</string>
+    <string name="take_more">展开更多</string>
+    <string name="contain_fee">【包含费用】</string>
+    <string name="in_the_vicinity_of_scenic">附近的景点</string>
+    <string name="in_the_vicinity_of_hotel">附近的酒店</string>
+    <string name="in_the_vicinity_of_food">附近的美食</string>
+    <string name="in_the_vicinity_of_shopping">附近的购物</string>
+    <string name="in_the_vicinity_of_amusement">附近的娱乐</string>
+
+    <!-- 离线行程 -->
+    <string name="offline_travel">离线行程</string>
+    <string name="sure_delete_offline">确定要删除该条离线行程吗？</string>
+    <string name="re_download">重新下载</string>
+
+    <!-- 团单操作 -->
+    <string name="contact">联系</string>
+    <string name="call_name">点名</string>
+    <string name="message_single">信息</string>
+    <string name="mass_texting">群发短信</string>
+    <string name="edit_mass_texting">编辑短信</string>
+    <string name="receiver">收件人:</string>
+    <string name="send">发送</string>
+    <string name="select_all">全选</string>
+    <string name="confirm">确认</string>
+    <string name="travel_unit">出行单位</string>
+    <string name="travel_date">出行时间</string>
+    <string name="travel_tour_guide">全陪导游</string>
+    <string name="travel_local_tour_guide">地陪导游</string>
+    <string name="driver_together">随行司机</string>
+    <string name="car_number">车牌号码</string>
+    <string name="oldman">老人</string>
+    <string name="children">儿童</string>
+    <string name="handicapped">残疾人</string>
+    <string name="soldier">军人</string>
+    <string name="travel_number">出行人数</string>
+    <string name="load_team_customer_list_fail">获取团队联系人列表失败</string>
+    <string name="load_group_info_fail">获取团信息失败</string>
+    <string name="load_rollcall_detail_fail">获取点名名单详情失败</string>
+    <string name="load_message_list_fail">获取信息列表失败</string>
+
+    <!-- 行程反馈 -->
+    <string name="feed_back_empty">反馈内容不能为空</string>
+    <string name="commit_travel_feed_back_fail">提交行程反馈失败</string>
+    <string name="load_travel_feed_back_list_fail">获取行程反馈列表失败</string>
+    <string name="no_product_tips_a">去Kooniao.com添加产品吧！</string>
+    <string name="stockpile">库存</string>
+    <string name="combo_type_colon">套餐类型：</string>
+    <string name="type_colon">分类：</string>
+    <string name="all_type">所有分类</string>
+    <string name="combo">套餐</string>
+    <string name="recommend">推荐</string>
+    <string name="not_recommend">未推荐</string>
+    <string name="recommended">已推荐</string>
+    <string name="distribute">分销</string>
+    <string name="edit">编辑</string>
+    <string name="status">状态</string>
+    <string name="onsell">在售</string>
+    <string name="sellout">已售罄</string>
+    <string name="setted">已设置</string>
+    <string name="not_set">未设置</string>
+    <string name="reset">重置</string>
+    <string name="current_location">当前位置</string>
+    <string name="area_colon">地区：</string>
+    <string name="all_area">全部地区</string>
+    <string name="select_area">选择地区</string>
+    <string name="china">中国</string>
+    <string name="selected">已选择</string>
+    <string name="price_interval">价格区间(元)</string>
+    <string name="destination">目的地：</string>
+    <string name="relocation">重新定位</string>
+    <string name="comprehensive_ranking">价格排序</string>
+    <string name="advanced_ranking">高级筛选</string>
+    <string name="resource">资源库</string>
+    <string name="look_for_product_resource">找资源</string>
+    <string name="load_resource_list_fail">获取资源列表失败</string>
+    <string name="please_choice_city">请选择城市</string>
+    <string name="please_input_correct_price">请输入正确的价格区间</string>
+    <string name="locating">定位中</string>
+    <string name="locating_fail">定位失败</string>
+    <string name="load_reference_list_fail">获取引用节点列表失败</string>
+    <string name="line_self">个人线路</string>
+    <string name="public_line">公共线路</string>
+    <string name="public_node">公共节点</string>
+    <string name="start_city">出发城市</string>
+    <string name="all_city">全部城市</string>
+    <string name="inventory_pricing">库存定价</string>
+    <string name="inventory_pricing_tips">设置不同时段的价格，满足多种市场需求，定期维护以便提高产品交易量。</string>
+    <string name="set_distribution">设置分销</string>
+    <string name="market_price">市场价</string>
+    <string name="please_input_market_price">请输入产品市场价格</string>
+    <string name="unit">单位</string>
+    <string name="slash">/</string>
+    <string name="min_order">最小起订量</string>
+    <string name="please_input_min_order">请输入最小起订量</string>
+    <string name="bookable_tips">库存为0可预订</string>
+    <string name="show_inventory">显示库存</string>
+    <string name="refund_handling">退货处理</string>
+    <string name="direct_return_inventory">直接回退至库存</string>
+    <string name="manual_return_inventory">手动回退至库存</string>
+    <string name="standard_product">商品规格</string>
+    <string name="standard_product_input_tips">请输入商品规格或套餐名</string>
+    <string name="product_current_price">产品现价</string>
+    <string name="way_inventory">库存方式</string>
+    <string name="total_inventory">库存总量</string>
+    <string name="total_inventory_input_tips">请输入产品库存总量</string>
+    <string name="everyday_inventory">每日库存</string>
+    <string name="way_deposit">订金方式</string>
+    <string name="according_money">按金额</string>
+    <string name="according_percent">按比例</string>
+    <string name="is_visiable">是否隐藏</string>
+    <string name="add_product_standard">添加产品规格</string>
+    <string name="please_input_sum">请输入金额</string>
+    <string name="price">价格</string>
+    <string name="distribution_set">分销设置</string>
+    <string name="distribution_set_tips">设置分销，其他用户通过获取佣金方式帮助您加快分销产品。</string>
+    <string name="add_template">添加模板</string>
+    <string name="setting_way">设置方式</string>
+    <string name="setting_way_manual">手动设置</string>
+    <string name="template_setting">模板设置</string>
+    <string name="params_setting">参数设置</string>
+    <string name="please_input_commission_sum">请输入该产品佣金金额</string>
+    <string name="template_empty_tip">暂时还没有模板，点击添加模板吧！</string>
+    <string name="commission_template">佣金模板</string>
+    <string name="template_title">模板标题</string>
+    <string name="hint_template_title">请输入模板标题</string>
+    <string name="dafault_template">默认模板</string>
+    <string name="commission_remark">佣金备注</string>
+    <string name="hint_commission_remark">请输入备注信息</string>
+    <string name="load_template_list_fail">获取模板列表失败</string>
+    <string name="add_distribution_faile">添加模板失败</string>
+    <string name="update_distribution_set_faile">保存分销设置失败</string>
+    <string name="commission_way">佣金方式</string>
+    <string name="select_date_tips">请选择设置日期</string>
+    <string name="inventory_account">库存量</string>
+    <string name="hint_inventory_account">请输入库存量</string>
+    <string name="order_pay">支付订单</string>
+    <string name="pay_type_colon">支付类型：</string>
+    <string name="should_pay_money_colon">应付金额：</string>
+    <string name="pay_way">支付方式</string>
+    <string name="pay_way_alipay">支付宝支付</string>
+    <string name="pay_right_now">立即支付</string>
+    <string name="pay_remain_now">支付尾款</string>
+    <string name="order_num_colon">订单编号：</string>
+    <string name="order_date_colon">下单时间：</string>
+    <string name="buy_again">再次购买</string>
+    <string name="user_order_detail">订单详情</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="cancel_reason">取消理由</string>
+    <string name="order_total_sum_colon">订单总额：</string>
+    <string name="seller_colon">卖家：</string>
+    <string name="seller_shop">卖家店铺</string>
+    <string name="contact_seller">联系卖家</string>
+    <string name="order_submit_success">订单提交成功</string>
+    <string name="order_pay_fail">支付失败</string>
+    <string name="everyday_inventory_account">每日库存量</string>
+
+    <!-- 取消订单 -->
+    <string name="write_wrong">填写信息错误</string>
+    <string name="resubmit">重复提交</string>
+    <string name="no_buy_le">不想买了</string>
+
+</resources>

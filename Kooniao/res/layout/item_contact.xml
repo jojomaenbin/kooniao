@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/back"
+        style="@style/baseLinearLayoutMMHorizontalStyle"
+        android:background="@color/main_bg"
+        android:gravity="right"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:tag="back"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@id/ib_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/vdd3a2c"
+            android:contentDescription="@null"
+            android:src="@drawable/delete"
+            android:tag="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/front"
+        style="@style/baseLinearLayoutMMVerticalStyle"
+        android:background="@color/main_bg" >
+
+        <TextView
+            android:id="@id/tv_contact_letter"
+            style="@style/baseLayoutMWStyle"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/v020202" />
+
+        <RelativeLayout
+            style="@style/baseLayoutMWStyle"
+            android:animateLayoutChanges="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@id/iv_contact_call"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:contentDescription="@null"
+                android:src="@drawable/phone_call_blue_selector" />
+
+            <ImageView
+                android:id="@id/iv_contact_circle"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_unselected"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_contact_name"
+                style="@style/baseLayoutMMStyle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_contact_call"
+                android:layout_toRightOf="@id/iv_contact_circle"
+                android:background="@drawable/list_item_selector"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_margin_left_15_right_25" />
+
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle" >
+
+    <RelativeLayout
+        android:id="@id/rl_about_kooniao_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/select_package"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <ScrollView
+            style="@style/baseLayoutMMStyle"
+            android:layout_above="@id/bt_accept"
+            android:background="@color/main_bg"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:animateLayoutChanges="true" >
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/package_classify"
+                        android:textColor="@color/v020202"
+                        android:textSize="13sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@id/ll_pacakge_container"
+                            style="@style/baseLinearLayoutMWHorizontalStyle" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/ll_calendar"
+                    style="@style/baseLinearLayoutMMVerticalStyle"
+                    android:layout_marginTop="15dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@id/iv_previous_month"
+                            style="@style/baseLayoutWWStyle"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/previous_month" />
+
+                        <TextView
+                            android:id="@id/tv_date"
+                            style="@style/baseLayoutWWStyle"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/v020202"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@id/iv_next_month"
+                            style="@style/baseLayoutWWStyle"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/next_month" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMWHorizontalStyle"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.kooniao.travel.customwidget.ChangeNumView
+                        android:id="@id/cn_product_package"
+                        android:layout_width="107dp"
+                        android:layout_height="29dp" />
+
+                    <TextView
+                        android:id="@id/tv_stockpile"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/v020202"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@id/bt_accept"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/veb4015"
+            android:gravity="center"
+            android:text="@string/accept"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

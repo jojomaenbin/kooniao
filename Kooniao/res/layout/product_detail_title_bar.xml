@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/topBarStyle" >
+
+    <ImageView
+        android:id="@id/iv_go_back"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/titlebar_backward_kooniao_selector"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@id/tv_product_detail_title_bar"
+        style="@style/baseLayoutWMStyle"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/product_detail"
+        android:textColor="@color/v020202"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@id/iv_share"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/share_selector"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@id/iv_set_up_store"
+        style="@style/baseLayoutWWStyle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/iv_share"
+        android:background="@drawable/open_a_store_selector"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+</RelativeLayout>

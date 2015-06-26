@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/translucence_black_dark" >
+
+    <ScrollView
+        style="@style/baseLayoutMMStyle"
+        android:layout_above="@id/iv_close"
+        android:layout_below="@id/tv_update_order_status_title"
+        android:layout_centerVertical="true"
+        android:padding="15dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:background="@null" >
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_dealing"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/processing"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_canceled"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/order_status_cacelled"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_confirm"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/order_status_confirm"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_part_collection"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/order_status_part_collection"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_closed"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/closed"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_money_receipt"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/money_receipt"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_unsubcribed"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/unsubcribed"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                android:id="@id/tv_order_status_have_a_ball"
+                style="@style/baseLayoutMWStyle"
+                android:background="@drawable/list_item_gray_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/have_a_ball"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@id/tv_update_order_status_title"
+        style="@style/baseLayoutMWStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/update_order_status"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@id/iv_close"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/close_white" />
+
+</RelativeLayout>

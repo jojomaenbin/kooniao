@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/swipe_refresh_layout"
+    style="@style/baseLayoutMMStyle"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <FrameLayout
+        style="@style/baseLayoutMMStyle"
+        android:background="@color/main_bg" >
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@id/sticky_lv_product"
+            style="@style/baseLayoutMMStyle"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="true"
+            android:fastScrollEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@id/layout_no_data"
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:layout_gravity="center_vertical"
+            android:gravity="bottom"
+            android:visibility="gone" >
+
+            <include layout="@layout/sub_no_product" />
+
+            <TextView
+                android:id="@id/tv_add_product"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_round_button_selector"
+                android:gravity="center"
+                android:text="@string/add_product_right_now"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_no_data_a"
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:layout_gravity="center_vertical"
+            android:gravity="bottom"
+            android:visibility="gone" >
+
+            <include layout="@layout/sub_no_product_a" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/iv_open_a_store"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:background="@drawable/i_want_to_open_a_store_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</in.srain.cube.views.ptr.PtrFrameLayout>

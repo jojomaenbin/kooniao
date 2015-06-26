@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutWWHorizontalStyle"
+    android:background="@drawable/pop_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:id="@id/ll_detail"
+        style="@style/baseLinearLayoutWWHorizontalStyle"
+        android:layout_gravity="center_vertical" >
+
+        <RatingBar
+            android:id="@id/rb_small_travel_rating"
+            style="@style/CustomRatingBarSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@id/tv_content"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/v020202" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_nacigation"
+        style="@style/baseLayoutWWStyle"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@null"
+        android:src="@drawable/titlebar_navigation_selector" />
+
+</LinearLayout>

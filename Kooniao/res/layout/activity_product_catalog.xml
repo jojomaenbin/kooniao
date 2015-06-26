@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/baseLinearLayoutMMVerticalStyle"
+              android:background="@color/main_bg">
+
+    <RelativeLayout
+            android:id="@id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@id/iv_go_back"
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/titlebar_backward_kooniao_selector"/>
+
+        <TextView
+                android:id="@id/title"
+                style="@style/baseLayoutWMStyle"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/product_catalog"
+                android:textColor="@color/v020202"
+                android:textSize="18sp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tjml"
+                android:background="@drawable/add_tab"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/divider_line_bg"/>
+
+
+    <ScrollView
+            style="@style/baseLayoutMMStyle"
+            android:scrollbars="none" >
+
+        <com.kooniao.travel.customwidget.FlowLayout
+                android:id="@+id/bqzs"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+        </com.kooniao.travel.customwidget.FlowLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:paddingBottom="30dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@id/tv_order_number_tip"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/order_number"
+                android:textColor="@color/v020202"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_order_number"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignTop="@id/tv_order_number_tip"
+                android:layout_toRightOf="@id/tv_order_number_tip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@id/ll_order_status_edit"
+                style="@style/baseLinearLayoutWWHorizontalStyle"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_order_number_tip"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:id="@id/iv_order_edit"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/edit_blue" />
+
+                <TextView
+                    android:id="@id/tv_order_status"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/ve73222"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@id/iv_order_cover_img"
+                android:layout_width="75dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:background="@color/v31a9b6"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/list_default_cover" />
+
+            <TextView
+                android:id="@id/tv_order_name"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignTop="@id/iv_order_cover_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/tv_order_count"
+                android:layout_toRightOf="@id/iv_order_cover_img"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_order_count"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignBaseline="@id/tv_order_name"
+                android:layout_alignBottom="@id/tv_order_name"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/v909090"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@id/tv_order_resource"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignBottom="@id/iv_order_cover_img"
+                android:layout_alignLeft="@id/tv_order_name"
+                android:layout_marginRight="50dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v909090"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@id/tv_order_price"
+                style="@style/baseLayoutMWStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textColor="@color/ve73222"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_margin_left_right_10" />
+
+        <RelativeLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@id/tv_order_buy_date_tip"
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/booking_date"
+                android:textColor="@color/v020202"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_order_buy_date"
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_order_comment"
+                android:layout_toRightOf="@id/tv_order_buy_date_tip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_order_comment"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/blue_retangle_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/comment"
+                android:textColor="@color/v16b8eb"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

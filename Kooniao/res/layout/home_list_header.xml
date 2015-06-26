@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMWStyle" >
+
+    <com.kooniao.travel.customwidget.AutoScrollViewPager
+        android:id="@id/avp_home_page_ad"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/v31a9b6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:id="@id/ll_viewpager_indicator"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_gravity="bottom"
+            android:background="@drawable/indicator_bg"
+            android:gravity="center"
+            android:visibility="visible"
+            tools:ignore="Orientation" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_viewpager_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_default_cover" />
+
+</RelativeLayout>

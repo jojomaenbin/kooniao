@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle" >
+
+    <RelativeLayout
+        android:id="@id/rl_mine_user_info"
+        style="@style/baseLayoutMWStyle" >
+
+        <!-- 高斯模糊覆盖 -->
+
+        <ImageView
+            android:id="@id/iv_mine_top_suspend"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@id/iv_mine_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_bg" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_height="120dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@id/iv_mine_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_default_avatar" />
+
+            <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@id/iv_arrow_right" >
+
+                    <TextView
+                        android:id="@id/tv_mine_top_user_name"
+                        style="@style/baseLayoutWWStyle"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@id/tv_mine_top_user_email"
+                        style="@style/baseLayoutWWStyle"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/click_to_login"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@id/tv_mine_top_user_phone"
+                        style="@style/baseLayoutWWStyle"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_arrow_right"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow_right_white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.kooniao.travel.customwidget.MultiScroll
+        style="@style/baseLayoutMMStyle"
+        android:background="@color/transparent"
+        android:paddingBottom="50dp"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/baseLinearLayoutMMVerticalStyle" >
+
+            <RelativeLayout
+                android:id="@id/lr_mine_travel"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mine_travel"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/travel"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_mine_travel"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/vd0d0d0"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <RelativeLayout
+                android:id="@id/lr_mine_collect"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mine_collect"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/collect"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_mine_collect"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/vd0d0d0"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <RelativeLayout
+                android:id="@id/lr_mine_offline"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mine_offline"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/offline"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_mine_offline"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/vd0d0d0"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <include layout="@layout/divider_line_full_margin_top_20" />
+
+            <RelativeLayout
+                android:id="@id/lr_mine_order_form"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mine_order_form"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_order_form"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_mine_order_form"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:text="@string/look_all_buy_product"
+                    android:textColor="@color/vd0d0d0"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <include layout="@layout/divider_line_full_margin_top_20" />
+
+            <RelativeLayout
+                android:id="@id/lr_mine_message"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mine_message"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/message"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_mine_message"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <include layout="@layout/divider_line_full_margin_top_20" />
+
+            <RelativeLayout
+                android:id="@id/lr_mine_setting"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mine_setting"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_mine_setting"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </com.kooniao.travel.customwidget.MultiScroll>
+
+</LinearLayout>

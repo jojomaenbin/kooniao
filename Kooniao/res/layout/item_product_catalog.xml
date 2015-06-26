@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutWWStyle"
+    >
+    <CheckBox    
+        style="@style/baseLayoutWWStyle"
+    android:button="@null"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/product_catalog_check_selector"
+    android:textSize="16sp"
+    android:textColor="@drawable/product_radio_text_selector"
+    />
+</LinearLayout>

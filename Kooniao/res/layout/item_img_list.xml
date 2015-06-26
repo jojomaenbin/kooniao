@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutWWStyle"
+    android:layout_height="180dp" >
+
+    <ImageView
+        android:id="@id/iv_item_img_list"
+        style="@style/baseLayoutMMStyle"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_default_cover" />
+
+</RelativeLayout>

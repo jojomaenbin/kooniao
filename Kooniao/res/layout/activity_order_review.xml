@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/comment"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutWMVerticalStyle"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_order_review_one"
+            style="@style/baseLayoutMWStyle"
+            android:layout_marginTop="20dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_order_review_name"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/travel_route"
+                android:textColor="@color/v020202"
+                android:textSize="17sp" />
+
+            <RatingBar
+                android:id="@+id/rb_order_review_one"
+                style="@style/CustomRatingBar"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tv_order_review_one_tips"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/very_satisfaction"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_order_review_two"
+            style="@style/baseLayoutMWStyle"
+            android:layout_marginTop="10dp"
+            android:background="@null" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/travel_service"
+                android:textColor="@color/v020202"
+                android:textSize="17sp" />
+
+            <RatingBar
+                android:id="@+id/rb_order_review_two"
+                style="@style/CustomRatingBar"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tv_order_review_two_tips"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/very_satisfaction"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_order_review_three"
+            style="@style/baseLayoutMWStyle"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@null" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/travel_food"
+                android:textColor="@color/v020202"
+                android:textSize="17sp" />
+
+            <RatingBar
+                android:id="@+id/rb_order_review_three"
+                style="@style/CustomRatingBar"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tv_order_review_three_tips"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/very_satisfaction"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_order_review_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/vf5f5f5"
+            android:gravity="top|left"
+            android:hint="@string/hint_comment"
+            android:maxLength="400"
+            android:padding="5dp"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            style="@style/baseLayoutMWStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_order_review_content_count"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/comment_max_count"
+                android:textColor="@color/v909090"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_order_review_commit"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/green_round_button_selector"
+                android:text="@string/comment_publish"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

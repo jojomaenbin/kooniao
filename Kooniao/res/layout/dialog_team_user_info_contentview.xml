@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@color/white"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@id/tv_user_name"
+        style="@style/baseLayoutWWStyle"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/v020202"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/sex_colon"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_sex"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/phone"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_mobile"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/id_num"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_num"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

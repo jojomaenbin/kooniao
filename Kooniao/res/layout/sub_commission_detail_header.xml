@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@id/iv_store_logo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/user_default_avatar" />
+
+        <TextView
+            android:id="@id/tv_store_name"
+            style="@style/baseLayoutMWStyle"
+            android:layout_alignTop="@id/iv_store_logo"
+            android:layout_toRightOf="@id/iv_store_logo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_store_contact_phone"
+            style="@style/baseLayoutMWStyle"
+            android:layout_alignBottom="@id/iv_store_logo"
+            android:layout_toRightOf="@id/iv_store_logo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/v16b8eb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_margin_left_right_10" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/order_sell_total"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_order_sell_total"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/commission_total"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_commission_total"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/vdd3a2c"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/closecontract"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_closecontract"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/v7ac142"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/for_the_account"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_for_the_account"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/vc56b25"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/for_the_account_detail"
+        android:textColor="@color/v78797a"
+        android:textSize="16sp" />
+
+</LinearLayout>

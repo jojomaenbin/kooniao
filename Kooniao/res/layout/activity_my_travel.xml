@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle" >
+
+    <LinearLayout style="@style/baseLinearLayoutMMVerticalStyle" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@id/iv_go_back"
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+            <TextView
+                style="@style/baseLayoutWMStyle"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/mine_travel"
+                android:textColor="@color/v020202"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            android:id="@id/swipe_refresh_layout"
+            style="@style/baseLayoutMMStyle" >
+
+            <FrameLayout style="@style/baseLayoutMMStyle" >
+
+                <com.kooniao.travel.customwidget.SwipeListView
+                    android:id="@id/listview"
+                    style="@style/baseLayoutMMStyle"
+                    android:background="@color/transparent"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="true" />
+
+                <include layout="@layout/sub_no_data" />
+            </FrameLayout>
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_travel_help"
+        style="@style/baseLayoutMMStyle"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/travel_help"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:layout_marginTop="10dp"
+    android:background="@color/white" >
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout style="@style/baseLinearLayoutMWHorizontalStyle" >
+
+        <ImageView
+            android:id="@+id/iv_product_standard_remove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/remove_round"
+            android:visibility="gone" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:padding="15dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_product_standard"
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/standard_product"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_product_standard"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/standard_product_input_tips"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_product_current_price"
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/product_current_price"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_current_price_unit"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:hint="@string/unit"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_current_price_slash"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toLeftOf="@id/et_current_price_unit"
+                    android:layout_toStartOf="@id/et_current_price_unit"
+                    android:text="@string/slash"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_current_price"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_toEndOf="@id/tv_product_current_price"
+                    android:layout_toLeftOf="@id/tv_current_price_slash"
+                    android:layout_toRightOf="@id/tv_product_current_price"
+                    android:layout_toStartOf="@id/tv_current_price_slash"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/price"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                style="@style/baseLayoutMWStyle"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_way_inventory"
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/way_inventory"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_way_inventory"
+                    style="@style/baseLinearLayoutMWHorizontalStyle"
+                    android:layout_below="@id/tv_way_inventory"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_total_inventory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hollow_retangle_selector"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_total_inventory"
+                            style="@style/baseLayoutWWStyle"
+                            android:text="@string/total_inventory"
+                            android:textColor="@color/vd0d0d0"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_everyday_inventory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/hollow_retangle_selector"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_everyday_inventory"
+                            style="@style/baseLayoutWWStyle"
+                            android:text="@string/everyday_inventory"
+                            android:textColor="@color/vd0d0d0"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_total_inventory"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_below="@+id/ll_way_inventory"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/total_inventory_input_tips"
+                    android:inputType="numberSigned"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:animateLayoutChanges="true" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_way_deposit"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_centerVertical="true"
+                        android:text="@string/way_deposit"
+                        android:textColor="@color/v020202"
+                        android:textSize="16sp" />
+
+                    <com.kooniao.travel.view.materialdesign.SwitchButton
+                        android:id="@+id/sb_way_deposit"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_according_way"
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/divider_line_bg" />
+
+                    <LinearLayout
+                        style="@style/baseLinearLayoutMWHorizontalStyle"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_according_money"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/hollow_retangle_selector"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/tv_according_money"
+                                style="@style/baseLayoutWWStyle"
+                                android:text="@string/according_money"
+                                android:textColor="@color/vd0d0d0"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_according_percent"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hollow_retangle_selector"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/tv_according_percent"
+                                style="@style/baseLayoutWWStyle"
+                                android:text="@string/according_percent"
+                                android:textColor="@color/vd0d0d0"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_according_sum"
+                        style="@style/baseLayoutMWStyle"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/please_input_sum"
+                        android:inputType="numberSigned"
+                        android:singleLine="true"
+                        android:textColor="@color/vd0d0d0"
+                        android:textColorHint="@color/vd0d0d0"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_is_visiable"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/is_visiable"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <com.kooniao.travel.view.materialdesign.SwitchButton
+                    android:id="@+id/sb_is_visiable"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

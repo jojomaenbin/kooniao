@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/store_setting"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_store"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/open_a_store_selector" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full_margin_top_20" />
+
+    <RelativeLayout
+        android:id="@id/rl_store_logo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/store_logo"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_arrow_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_right_gray" />
+
+        <ImageView
+            android:id="@id/iv_store_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_arrow_go"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_default_avatar" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_margin_left_10" />
+
+    <RelativeLayout
+        android:id="@id/rl_store_bg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/store_bg"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_arrow_go"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_right_gray" />
+
+        <ImageView
+            android:id="@id/iv_store_bg"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_arrow_go"
+            android:background="@color/v31a9b6"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_bg" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <include layout="@layout/divider_line_full_margin_top_10" />
+
+    <RelativeLayout
+        android:id="@id/rl_store_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@id/tv_store_name_tip"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/store_name"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_store_name"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_store_name_tip"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_margin_left_10" />
+
+    <RelativeLayout
+        android:id="@id/rl_store_contact_phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/store_contact_phone"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_store_contact_phone"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

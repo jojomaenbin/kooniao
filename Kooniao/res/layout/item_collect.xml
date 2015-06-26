@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@drawable/list_item_selector" >
+
+    <LinearLayout
+        android:id="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/main_bg"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/v16b8eb"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/remind_rings_on"
+            android:tag="1" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/v16b8eb"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/calendar"
+            android:tag="2" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/vdd3a2c"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/delete"
+            android:tag="3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/front"
+        style="@style/baseLayoutMWStyle"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:tag="front" >
+
+        <ImageView
+            android:id="@id/iv_collect_cover"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:background="@color/v31a9b6"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_default_cover" />
+
+        <TextView
+            android:id="@id/tv_collect_name"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignTop="@id/iv_collect_cover"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_collect_cover"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_alignLeft="@id/tv_collect_name"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@id/tv_collect_type"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v909090"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@id/ll_collect_resource"
+                style="@style/baseLinearLayoutWWHorizontalStyle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/from"
+                    android:textColor="@color/v909090"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/tv_product_resource"
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/v16b8eb"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignBottom="@id/iv_collect_cover"
+            android:layout_alignLeft="@id/tv_collect_name"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/collected_in"
+                android:textColor="@color/v909090"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_collect_time"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v909090"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

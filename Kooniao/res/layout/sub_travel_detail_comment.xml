@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:layout_marginTop="30dp"
+    android:background="@color/white" >
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@null"
+        android:padding="10dp" >
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/v16b8eb" />
+
+        <TextView
+            style="@style/baseLayoutMWStyle"
+            android:layout_marginLeft="7dp"
+            android:text="@string/comment"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutWWHorizontalStyle"
+        android:background="@null"
+        android:paddingTop="20dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:text="@string/travel_plan"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@id/rb_small_travel_rating"
+            style="@style/CustomRatingBar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@id/tv_travel_comment_tips"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/very_satisfaction"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@id/et_travel_detail_comment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@color/vf5f5f5"
+        android:gravity="top|left"
+        android:hint="@string/hint_comment"
+        android:maxLength="400"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@id/tv_travel_detail_content_count"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLength="400"
+            android:singleLine="true"
+            android:text="@string/comment_max_count"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@id/bt_travel_detail_comment_commit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/green_round_button_selector"
+            android:text="@string/comment_publish"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <com.kooniao.travel.customwidget.LinearListLayout
+        android:id="@id/lv_travel_comment_list"
+        style="@style/baseLayoutMMStyle" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/titlebar_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/line"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_filter"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/filter_selector"
+            tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/v_line_selected"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/v16b8eb" />
+
+            <TextView
+                android:id="@+id/tv_line_self"
+                style="@style/baseLayoutMMStyle"
+                android:layout_above="@id/v_line_selected"
+                android:background="@drawable/list_item_selector"
+                android:gravity="center"
+                android:text="@string/line_self"
+                android:textColor="@color/v16b8eb"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/v_public_line_selected"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/v16b8eb"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_public_line"
+                style="@style/baseLayoutMMStyle"
+                android:layout_above="@id/v_public_line_selected"
+                android:background="@drawable/list_item_selector"
+                android:gravity="center"
+                android:text="@string/public_line"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <FrameLayout
+        android:id="@id/fl_fragment_container"
+        style="@style/baseLayoutMMStyle" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:animateLayoutChanges="true" >
+
+    <TextView
+        android:id="@id/tv_travel_detail_name"
+        style="@style/baseLayoutMMStyle"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/v020202"
+        android:textSize="18sp" />
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

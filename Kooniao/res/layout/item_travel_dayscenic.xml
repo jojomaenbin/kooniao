@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:animateLayoutChanges="true"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="10dp"
+            android:background="@color/vc7d3d7" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:background="@color/vc7d3d7" />
+
+            <ImageView
+                android:id="@id/iv_travel_scenic_type"
+                style="@style/baseLayoutWWStyle"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/travel_detail_shopping" />
+        </FrameLayout>
+
+        <RelativeLayout
+            style="@style/baseLayoutMWStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-10dp"
+            android:background="@null" >
+
+            <ImageView
+                android:id="@id/iv_node_go"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow_right_gray" />
+
+            <LinearLayout
+                android:id="@id/ll_travel_scenic"
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:layout_toLeftOf="@id/iv_node_go"
+                android:background="@null"
+                android:paddingLeft="5dp" >
+
+                <LinearLayout
+                    android:id="@id/ll_name_remarks"
+                    style="@style/baseLinearLayoutWWHorizontalStyle"
+                    android:background="@null" >
+
+                    <TextView
+                        android:id="@id/tv_travel_scenic_name"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:textColor="@color/v020202"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/iv_travel_scenic_remarks"
+                        style="@style/baseLayoutWWStyle"
+                        android:contentDescription="@null"
+                        android:src="@drawable/travel_remarks"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/tv_travel_scenic_time"
+                    style="@style/baseLayoutWWStyle"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/v909090"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/vc7d3d7" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_travel_scenic_remarks"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/v909090"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

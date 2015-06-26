@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@drawable/list_item_selector" >
+
+    <RelativeLayout
+        android:id="@id/lv_item"
+        style="@style/baseLayoutMWStyle"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@id/iv_cover"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:background="@color/v31a9b6"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_default_cover" />
+
+        <TextView
+            android:id="@id/tv_around_title"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignTop="@id/iv_cover"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_cover"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@id/rb_around"
+            style="@style/CustomRatingBarSmall"
+            android:layout_alignLeft="@id/tv_around_title"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0" />
+
+        <LinearLayout
+            android:id="@id/ll_around_price"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignBottom="@id/iv_cover"
+            android:layout_alignLeft="@id/rb_around"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_around_distance" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/refference_price"
+                android:textColor="@color/v909090"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_around_price"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/vdd3a2c"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_around_distance"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/ll_around_price"
+            android:textColor="@color/v909090"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_margin_left_right_10" />
+
+</LinearLayout>

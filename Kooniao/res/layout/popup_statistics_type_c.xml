@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/translucence_black_dark"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@color/white" >
+        
+        <include layout="@layout/divider_line_full" />
+
+        <TextView
+            android:id="@id/tv_store_sale_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/store_in_sale_statistics"
+            android:textColor="@color/v020202"
+            android:textSize="15sp" />
+
+        <include layout="@layout/divider_line_full" />
+
+        <TextView
+            android:id="@id/tv_product_sale_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/product_in_sale_statistics"
+            android:textColor="@color/v020202"
+            android:textSize="15sp" />
+
+        <include layout="@layout/divider_line_full" />
+
+    </LinearLayout>
+
+</ScrollView>

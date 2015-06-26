@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/rl_about_kooniao_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/about_kooniao"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/titlebar_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_about_kooniao_titlebar"
+        android:background="@color/divider_line_bg" />
+
+    <ImageView
+        android:id="@id/iv_about_kooniao_icon"
+        style="@style/baseLayoutWWStyle"
+        android:layout_below="@id/titlebar_divider_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/kooniao_travel" />
+
+    <TextView
+        android:id="@id/tv_kooniao_version"
+        style="@style/baseLayoutWWStyle"
+        android:layout_below="@id/iv_about_kooniao_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/v909090"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@id/about_version_top_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_kooniao_version"
+        android:layout_marginTop="30dp"
+        android:background="@color/divider_line_bg" />
+
+    <RelativeLayout
+        android:id="@id/lr_about_kooniao_version"
+        style="@style/baseLayoutMWStyle"
+        android:layout_below="@id/about_version_top_divider_line"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/version_update"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_version"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/about_version_bottom_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/lr_about_kooniao_version"
+        android:background="@color/divider_line_bg" />
+
+    <TextView
+        android:id="@id/tv_kooniao_copyright"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/copyright"
+        android:textColor="@color/v909090"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@id/ll_other_links"
+        style="@style/baseLayoutMWStyle"
+        android:layout_above="@id/tv_kooniao_copyright"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@id/tv_offical_websize"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:text="@string/offical_websize"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_service_agreement"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_agreement"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_webchat"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:text="@string/webchat"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

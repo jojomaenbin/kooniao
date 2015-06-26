@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:layout_height="100dp"
+    android:padding="15dp" >
+
+    <TextView
+        style="@style/baseLayoutWWStyle"
+        android:text="@string/commission_description"
+        android:textColor="@color/v020202"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/tv_commission_desc"
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/v020202"
+        android:textSize="16sp" />
+
+    <include layout="@layout/divider_line_full" />
+
+    <TextView
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/remark"
+        android:textColor="@color/v020202"
+        android:textSize="18sp" />
+
+    <ScrollView
+        style="@style/baseLayoutMWStyle"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@id/tv_remark"
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>

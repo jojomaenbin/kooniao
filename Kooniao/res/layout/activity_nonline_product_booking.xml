@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/book"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_below="@id/top_bar"
+        android:background="@color/divider_line_bg" />
+
+    <ScrollView
+        android:id="@id/sv_product_booking_info"
+        style="@style/baseLayoutMMStyle"
+        android:layout_above="@id/ll_submit_order"
+        android:layout_below="@id/divider_line"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <TextView
+                android:id="@id/tv_product_name"
+                style="@style/baseLayoutMWStyle"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:background="@color/white"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/order_product_code"
+                    android:textColor="@color/v909090"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@id/tv_product_code"
+                    style="@style/baseLayoutWWStyle"
+                    android:background="@color/white"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/v909090"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_store_name"
+                style="@style/baseLayoutMWStyle"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/v909090"
+                android:textSize="14sp" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/count"
+                android:textColor="@color/v909090" />
+
+            <include layout="@layout/divider_line_margin_left_right_10" />
+
+            <RelativeLayout
+                style="@style/baseLayoutMWStyle"
+                android:background="@color/transparent"
+                android:padding="10dp" >
+
+                <com.kooniao.travel.customwidget.ChangeNumView
+                    android:id="@id/cn_product_count"
+                    android:layout_width="107dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@id/tv_product_price"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/vdd3a2c"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/contacts"
+                android:textColor="@color/v909090" />
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/name"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@id/et_name"
+                    style="@style/baseLayoutMMStyle"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/name_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/v909090"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/mobile"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@id/et_mobile"
+                    style="@style/baseLayoutMMStyle"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/mobile_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="@color/v909090"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/email_contact"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@id/et_email"
+                    style="@style/baseLayoutMMStyle"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/email_contact_hint"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/v909090"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/ll_submit_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/vd48d56"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:gravity="center"
+                android:text="@string/total_money"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_total_money"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.kooniao.travel.view.materialdesign.LayoutRipple
+            android:id="@id/lr_submit_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/vc56b25" >
+
+            <TextView
+                style="@style/baseLayoutMMStyle"
+                android:gravity="center"
+                android:text="@string/order_submit"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </com.kooniao.travel.view.materialdesign.LayoutRipple>
+    </LinearLayout>
+
+</RelativeLayout>

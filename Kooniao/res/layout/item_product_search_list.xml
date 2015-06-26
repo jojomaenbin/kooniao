@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@drawable/list_item_selector" >
+
+    <RelativeLayout
+        android:id="@id/lv_item"
+        style="@style/baseLayoutMWStyle"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@id/iv_product_cover_img"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:background="@color/v31a9b6"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_default_cover" />
+
+        <TextView
+            android:id="@id/tv_product_name"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignTop="@id/iv_product_cover_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_product_cover_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@id/rb_product"
+            style="@style/CustomRatingBarSmall"
+            android:layout_alignLeft="@id/tv_product_name"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignBottom="@id/iv_product_cover_img"
+            android:layout_alignLeft="@id/rb_product"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ll_product_price" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/from"
+                android:textColor="@color/v909090"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_product_resource"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v16b8eb"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_product_price"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignBottom="@id/iv_product_cover_img"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/rmb"
+                android:textColor="@color/ve73222"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_product_price"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/ve73222"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_margin_left_right_10" />
+
+</LinearLayout>

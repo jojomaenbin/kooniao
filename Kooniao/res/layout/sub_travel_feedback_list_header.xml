@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:paddingTop="30dp" >
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:text="@string/travel_route"
+            android:textColor="@color/v020202"
+            android:textSize="17sp" />
+
+        <RatingBar
+            android:id="@id/rb_travel_feedback_route"
+            style="@style/CustomRatingBar"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@id/tv_travel_feedback_route_tips"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:text="@string/very_satisfaction"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:text="@string/travel_service"
+            android:textColor="@color/v020202"
+            android:textSize="17sp" />
+
+        <RatingBar
+            android:id="@id/rb_travel_feedback_service"
+            style="@style/CustomRatingBar"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@id/tv_travel_feedback_service_tips"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:text="@string/very_satisfaction"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:text="@string/travel_food"
+            android:textColor="@color/v020202"
+            android:textSize="17sp" />
+
+        <RatingBar
+            android:id="@id/rb_travel_feedback_food"
+            style="@style/CustomRatingBar"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@id/tv_travel_feedback_food_tips"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:text="@string/very_satisfaction"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/baseLayoutWWStyle"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/user_comment"
+        android:textColor="@color/v020202"
+        android:textSize="17sp" />
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

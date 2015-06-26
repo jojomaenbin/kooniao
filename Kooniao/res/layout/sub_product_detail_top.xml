@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@id/iv_product_cover_img"
+            style="@style/baseLayoutMMStyle"
+            android:background="@color/v31a9b6"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_default_cover" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shade_bg"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@id/tv_product_registration_number"
+            style="@style/productTipsTextViewStyle"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/registration_number"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/tv_product_inventory"
+            style="@style/productTipsTextViewStyle"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_product_registration_number"
+            android:drawableLeft="@drawable/inventory"
+            android:visibility="gone" />
+
+
+        <RatingBar
+            android:id="@id/rb_product"
+            style="@style/CustomRatingBarSmall"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0" />
+
+        <TextView
+            android:id="@id/tv_product_score"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignBottom="@id/rb_product"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/rb_product"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@id/ll_travel_detail_fee_desc"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignBottom="@id/rb_product"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:paddingBottom="3dp"
+                android:text="@string/rmb"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_product_name"
+        style="@style/baseLayoutMWStyle"
+        android:ellipsize="end"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/v020202"
+        android:textSize="17sp" />
+
+    <RelativeLayout style="@style/baseLinearLayoutMWHorizontalStyle" >
+
+        <TextView
+            android:id="@id/tv_price_mark"
+            style="@style/baseLayoutMWStyle"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@id/tv_price_left"
+                style="@style/baseLayoutWWStyle"
+                android:paddingBottom="3dp"
+                android:textColor="@color/vdd3a2c"
+                android:paddingRight="2dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_product_price"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/vdd3a2c"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@id/tv_price_right"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:paddingLeft="2dp"
+                android:singleLine="true"
+                android:textColor="@color/v78797a"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <TextView
+        android:id="@id/product_select"
+        style="@style/baseLayoutMWStyle"
+        android:background="@drawable/list_item_selector"
+        android:drawableRight="@drawable/arrow_right_gray"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/product_select"
+        android:textColor="@color/v323232"
+        android:textSize="15sp" />
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

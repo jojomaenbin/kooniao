@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_close_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/select_package"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/tick_blue_max" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:id="@+id/ll_calendar"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:layout_marginTop="30dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ImageView
+                android:id="@id/iv_previous_month"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/previous_month" />
+
+            <TextView
+                android:id="@id/tv_date"
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerInParent="true"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@id/iv_next_month"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/next_month" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_selected_date"
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/select_date_tips"
+        android:textColor="@color/v16b8eb"
+        android:textSize="13sp" />
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:text="@string/inventory_account"
+            android:textColor="@color/v020202"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_inventory_acount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="@string/hint_inventory_account"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/vd0d0d0"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

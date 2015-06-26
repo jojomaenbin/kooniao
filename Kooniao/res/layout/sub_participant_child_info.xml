@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg"
+    android:paddingTop="15dp" >
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/name_child"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_participant_child_name"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/participant_name"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/mobile"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_participant_child_mobile"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mobile_num"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

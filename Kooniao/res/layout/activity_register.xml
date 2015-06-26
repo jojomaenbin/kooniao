@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/register"
+            android:textColor="@color/v020202"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/tv_register_login"
+            style="@style/baseLayoutWMStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/login"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@id/v_register_phone_selected"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/v16b8eb" />
+
+            <TextView
+                android:id="@id/tv_register_phone"
+                style="@style/baseLayoutMMStyle"
+                android:layout_above="@id/v_register_phone_selected"
+                android:background="@drawable/list_item_selector"
+                android:gravity="center"
+                android:text="@string/register_phone"
+                android:textColor="@color/v16b8eb"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@id/v_register_email_selected"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/v16b8eb"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@id/tv_register_email"
+                style="@style/baseLayoutMMStyle"
+                android:layout_above="@id/v_register_email_selected"
+                android:background="@drawable/list_item_selector"
+                android:gravity="center"
+                android:text="@string/register_email"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <ScrollView
+        style="@style/baseLayoutMMStyle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:animateLayoutChanges="true" >
+
+            <!-- 手机注册布局 -->
+
+            <include
+                android:id="@id/sublayout_phone_register"
+                layout="@layout/sub_phone_register" />
+
+            <!-- 邮箱注册布局 -->
+
+            <include
+                android:id="@id/layout_email_register"
+                layout="@layout/sub_email_register"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@id/bt_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/green_round_button_selector"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:gravity="left"
+                    android:text="@string/user_register_bottom"
+                    android:textColor="@color/v909090"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_user_aggrement"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="left"
+                    android:text="@string/user_aggrement"
+                    android:textColor="@color/v16b8eb"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

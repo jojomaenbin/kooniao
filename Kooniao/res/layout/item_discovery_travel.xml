@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:animateLayoutChanges="true" >
+
+    <LinearLayout
+        android:id="@id/ll_recommend_tips"
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommand_info_tips" />
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/recommend_tips"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout style="@style/baseLayoutMWStyle" >
+
+        <ImageView
+            android:id="@id/iv_cover_travel"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@color/v16b8eb"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_default_cover" />
+
+        <com.kooniao.travel.customwidget.SelectedImgeView
+            android:id="@id/iv_collect_travel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:layout_margin="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/collect_red_selector" />
+
+        <RelativeLayout
+            style="@style/baseLayoutMWStyle"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shade_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@id/tv_travel_cost"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@id/tv_scenic_cost_orientation"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/tv_travel_cost"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/rmb"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@id/tv_travel_start_place"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/tv_scenic_cost_orientation"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

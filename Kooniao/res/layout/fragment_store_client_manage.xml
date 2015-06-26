@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle" >
+
+    <ListView
+        android:id="@id/listview"
+        style="@style/normalListViewStyle" />
+
+    <include layout="@layout/sub_no_data" />
+
+    <TextView
+        android:id="@id/tv_client_selected_tips"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sidebar_toast_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <com.kooniao.travel.customwidget.SideBar
+        xmlns:sb="http://schemas.android.com/apk/res-auto"
+        android:id="@id/sb_right"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        sb:hasOther="true"
+        sb:isLocation="false" />
+
+</FrameLayout>

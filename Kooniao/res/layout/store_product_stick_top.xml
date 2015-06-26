@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/rl_stick_header"
+    style="@style/baseLayoutMWStyle" >
+
+    <HorizontalScrollView
+        style="@style/baseLayoutWWStyle"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_height="50dp"
+            android:background="@null" >
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@id/tv_category_all"
+                    style="@style/horizontalScrollViewItemStyle"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/all"
+                    android:textColor="@color/v16b8eb"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/divider_line_blue_full" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_category_line"
+                style="@style/horizontalScrollViewItemStyle"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/line"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_category_hotel"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/hotel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_category_scenic"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/category_scenic"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_category_shopping"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/category_shopping"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_category_amusement"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/category_amusement"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_category_food"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/category_food"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_category_traffic"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/category_traffic"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_category_group_product"
+                style="@style/horizontalScrollViewItemStyle"
+                android:text="@string/category_group_product"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

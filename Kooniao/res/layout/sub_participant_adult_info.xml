@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg"
+  >
+ <TextView
+     android:id="@id/participant_num"
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:text="@string/participant"
+            android:textColor="@color/v707070"
+            android:textSize="16sp" />
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/name"
+            android:textColor="@color/v707070"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_participant_adult_name"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/participant_name"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/mobile"
+            android:textColor="@color/v707070"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_participant_adult_mobile"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mobile_num"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:id="@id/ll_certificate_type"
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@id/tv_certificate_type"
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/certificate_type"
+            android:textColor="@color/v707070"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_type"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_down_gray"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="@string/certificate_type_id_card"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/certificate_code"
+            android:textColor="@color/v707070"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_participant_certificate_num"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/certificate_code"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

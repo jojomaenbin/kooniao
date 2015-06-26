@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/v16b8eb"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingTop="3dp" >
+
+    <TextView
+        android:id="@id/tv_add_love_to"
+        style="@style/bottombarOperateTextViewStyle"
+        android:drawableTop="@drawable/collect_white_selector"
+        android:text="@string/love" />
+
+    <TextView
+        android:id="@id/tv_travel_detail_share"
+        style="@style/bottombarOperateTextViewStyle"
+        android:drawableTop="@drawable/bottom_bar_share_selector"
+        android:text="@string/share" />
+
+    <TextView
+        android:id="@id/tv_travel_detail_download"
+        style="@style/bottombarOperateTextViewStyle"
+        android:drawableTop="@drawable/bottombar_download_selector"
+        android:text="@string/download" />
+
+    <TextView
+        android:id="@id/tv_add_my_travel"
+        style="@style/bottombarOperateTextViewStyle"
+        android:drawableTop="@drawable/bottombar_add_selector"
+        android:text="@string/add_travel" />
+
+    <TextView
+        android:id="@id/tv_travel_feedback"
+        style="@style/bottombarOperateTextViewStyle"
+        android:drawableTop="@drawable/bottombar_feedback_selector"
+        android:text="@string/travel_feedback"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/tv_travel_comment"
+        style="@style/bottombarOperateTextViewStyle"
+        android:drawableTop="@drawable/bottombar_comment_selector"
+        android:text="@string/look_comment"
+        android:visibility="gone" />
+
+</LinearLayout>

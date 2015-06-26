@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_no_data"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg"
+    android:visibility="gone" >
+
+    <include layout="@layout/home_page_product_stick_top" />
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/kooniao_tips"
+            android:text="@string/no_related_data"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

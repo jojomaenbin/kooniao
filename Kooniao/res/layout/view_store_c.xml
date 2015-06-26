@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle" >
+
+    <RelativeLayout
+        android:id="@id/rl_store_info"
+        style="@style/baseLayoutMWStyle" >
+
+        <!-- 高斯模糊覆盖 -->
+
+        <ImageView
+            android:id="@id/iv_store_top_suspend"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@id/iv_store_top_bg_c"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_bg" />
+
+        <LinearLayout
+            android:id="@id/ll_store_top_c"
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_height="120dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@id/iv_store_logo_c"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_default_avatar" />
+
+            <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@id/iv_arrow_right" >
+
+                    <TextView
+                        android:id="@id/tv_store_name_top_c"
+                        style="@style/baseLayoutWWStyle"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@id/tv_store_user_name_c"
+                        style="@style/baseLayoutWWStyle"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/iv_arrow_right"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow_right_white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.kooniao.travel.customwidget.MultiScroll
+        style="@style/baseLayoutMMStyle"
+        android:background="@color/transparent"
+        android:paddingBottom="50dp"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/baseLinearLayoutMMVerticalStyle" >
+
+            <RelativeLayout
+                android:id="@id/ll_store_order_c"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/store_order"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_order"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v909090"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <RelativeLayout
+                android:id="@id/ll_store_sale_statistics_c"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/store_sales_statistics"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_sale_statistics"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v909090"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <RelativeLayout
+                android:id="@id/ll_store_product_manage_c"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/store_product_manage"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_product_manage"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v909090"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <RelativeLayout
+                android:id="@id/ll_store_commission_manage_c"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/store_commission_manage"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_commission_manage"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <include layout="@layout/divider_line_full_margin_top_20" />
+
+            <RelativeLayout
+                android:id="@id/ll_store_enter_c"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@id/tv_store_name_c_tip"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/store_enter"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_enter"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_store_name_c"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_store_name_c_tip"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <include layout="@layout/divider_line_full_margin_top_20" />
+
+            <RelativeLayout
+                android:id="@id/ll_store_message_c"
+                style="@style/baseLayoutWWStyle"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/store_message"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_message"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </com.kooniao.travel.customwidget.MultiScroll>
+
+</LinearLayout>

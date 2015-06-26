@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle" >
+
+    <include layout="@layout/product_detail_title_bar" />
+
+    <include layout="@layout/divider_line_full" />
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <com.kooniao.travel.customwidget.StickyScrollView
+            style="@style/baseLayoutMMStyle"
+            android:layout_above="@id/product_bottom"
+            android:scrollbars="none" >
+
+            <LinearLayout style="@style/baseLinearLayoutMMVerticalStyle" >
+
+                <include layout="@layout/sub_product_detail_top" />
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:tag="sticky" >
+
+                    <com.kooniao.travel.customwidget.TitleBarTab
+                        android:id="@id/title_bar_tab"
+                        style="@style/baseLayoutMWStyle" />
+
+                    <include layout="@layout/divider_line_full" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@id/fl_fragment_container"
+                    style="@style/baseLayoutMWStyle"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@id/shop_center_layout"
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:background="@drawable/list_item_selector" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_line_bg" />
+
+                    <LinearLayout
+                        style="@style/baseLinearLayoutMWHorizontalStyle"
+                        tools:ignore="UseCompoundDrawables" >
+
+                        <ImageView
+                            android:id="@id/shop_center_logo"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@id/shop_center"
+                            style="@style/baseLayoutMWStyle"
+                            android:drawableRight="@drawable/arrow_right_gray"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:paddingTop="15dp"
+                            android:textColor="@color/v323232"
+                            android:textSize="15sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_line_bg" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.kooniao.travel.customwidget.StickyScrollView>
+
+        <LinearLayout
+            android:id="@id/shop_bottom_layout"
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:layout_above="@id/product_bottom"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/list_item_selector"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_line_bg" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:id="@id/shop_bottom_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@id/shop_bottom"
+                    style="@style/baseLayoutMWStyle"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/v323232"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_line_bg" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/product_bottom"
+            android:background="@color/divider_line_bg" />
+
+        <LinearLayout
+            android:id="@id/product_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:id="@id/iv_contact_customer_service"
+                    style="@style/baseLayoutWWStyle"
+                    android:background="@drawable/phone_call_blue_selector"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/contact"
+                    android:textColor="@color/v909090"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_line_bg" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:id="@id/iv_collect"
+                    style="@style/baseLayoutWWStyle"
+                    android:background="@drawable/collect_blue_selector"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/collect"
+                    android:textColor="@color/v909090"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/iv_product_booking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#EB4015"
+                android:gravity="center"
+                android:text="@string/product_reserve_now"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

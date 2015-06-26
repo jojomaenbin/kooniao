@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/v020202" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/vp_recommand"
+        style="@style/baseLayoutMWStyle" />
+
+    <ImageView
+        android:id="@id/iv_go_back"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/titlebar_backward_kooniao_selector"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@id/tv_schedule_imgbrowser"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

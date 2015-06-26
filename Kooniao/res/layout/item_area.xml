@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@id/ll_area_category"
+        style="@style/baseLinearLayoutMMVerticalStyle" >
+
+        <TextView
+            android:id="@id/tv_area_category"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/main_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="13dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="18dp"
+            android:paddingTop="15dp"
+            android:text="@string/current_location"
+            android:textColor="@color/v707070"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:ignore="RtlSymmetry" />
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@id/iv_area_locating"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/area_location"
+            android:visibility="gone" />
+
+        <LinearLayout style="@style/baseLinearLayoutMWHorizontalStyle" >
+
+            <TextView
+                android:id="@id/tv_area_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/v020202"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@id/tv_area_selected_title"
+                style="@style/baseLayoutWMStyle"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/v909090"
+                android:textSize="13sp"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

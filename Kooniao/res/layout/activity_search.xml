@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:animateLayoutChanges="true" >
+
+    <RelativeLayout style="@style/topBarStyle" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/titlebar_backward_arrow_selector"
+            android:contentDescription="@null" />
+
+        <include layout="@layout/sub_search_layout"/>
+
+        <TextView
+            android:id="@id/tv_search"
+            style="@style/baseLayoutWMStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/search"
+            android:textColor="@color/v16b8eb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <include layout="@layout/sub_no_data"/>
+
+    <include
+        android:id="@id/search_topbar"
+        layout="@layout/popup_search_quick_tips"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@id/lv_product"
+        style="@style/normalListViewStyle" />
+
+</LinearLayout>

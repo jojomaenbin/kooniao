@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/back"
+        style="@style/baseLinearLayoutMMHorizontalStyle"
+        android:background="@color/main_bg"
+        android:gravity="right"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@id/ib_remind"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/v16b8eb"
+            android:contentDescription="@null"
+            android:src="@drawable/remind_rings_off"
+            android:tag="1" />
+
+        <ImageButton
+            android:id="@id/ib_calendar"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/v16b8eb"
+            android:contentDescription="@null"
+            android:src="@drawable/calendar"
+            android:tag="2" />
+
+        <ImageButton
+            android:id="@id/ib_delete"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/vdd3a2c"
+            android:contentDescription="@null"
+            android:src="@drawable/delete"
+            android:tag="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/front"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@drawable/list_item_selector" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:background="@null" >
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp" >
+
+                <ImageView
+                    android:id="@id/iv_travel_cover"
+                    style="@style/baseLayoutMMStyle"
+                    android:background="@color/v31a9b6"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list_default_cover" />
+
+                <LinearLayout
+                    android:id="@id/ll_travel_cover_mask"
+                    style="@style/baseLayoutMMStyle"
+                    android:background="@color/vaa16b8eb"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@id/tv_travel_state"
+                        style="@style/baseLayoutWWStyle"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@id/tv_travel_date"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@id/tv_travel_name"
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:maxEms="16"
+                    android:singleLine="true"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@id/rb_travel_rating"
+                    style="@style/CustomRatingBarSmall"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+
+                <RelativeLayout style="@style/baseLayoutMWStyle" >
+
+                    <TextView
+                        android:id="@id/tv_travel_price"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/refference_price"
+                        android:textColor="@color/v909090"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        style="@style/baseLinearLayoutWWHorizontalStyle"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_travel_price"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <TextView
+                            style="@style/baseLayoutWWStyle"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/rmb"
+                            android:textColor="@color/vdd3a2c"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@id/tv_travel_refference_price"
+                            style="@style/baseLayoutWWStyle"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/vdd3a2c"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@id/tv_starting_today"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/blue_retangle_bg"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/starting_today"
+                        android:textColor="@color/v16b8eb"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+</FrameLayout>

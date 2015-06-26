@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle" >
+
+    <LinearLayout style="@style/baseLinearLayoutMWHorizontalStyle" >
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null" >
+
+            <LinearLayout
+                style="@style/baseLinearLayoutWMVerticalStyle"
+                android:layout_gravity="center" >
+
+                <View
+                    android:id="@id/v_vertical_top"
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+                    android:background="@color/vc7d3d7" />
+
+                <View
+                    android:id="@id/v_vertical_bottom"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@color/vc7d3d7" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_travel_day"
+                style="@style/baseLayoutWWStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/travel_detail_day"
+                android:gravity="right|center"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWVerticalStyle"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@id/tv_travel_scenic_day_name"
+                style="@style/baseLayoutWWStyle"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutWWHorizontalStyle"
+                android:layout_marginLeft="5dp"
+                android:background="@null" >
+
+                <TextView
+                    android:id="@id/tv_travel_scenic_day_date"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/v16b8eb"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@id/iv_travel_scenic_day_remarks"
+                    style="@style/baseLayoutWWStyle"
+                    android:contentDescription="@null"
+                    android:src="@drawable/travel_remarks"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/vc7d3d7" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_travel_scenic_day_remarks"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/v909090"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

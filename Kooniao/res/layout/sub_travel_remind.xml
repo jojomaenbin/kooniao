@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rl_travel_remind"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_above="@id/layout_bottom_bar"
+    android:layout_alignWithParentIfMissing="true"
+    android:background="@color/v16b8eb" >
+
+    <LinearLayout
+        android:id="@id/ll_travel_remind_date"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@id/tv_current_travel_month"
+            style="@style/baseLayoutWWStyle"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_current_travel_day"
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@id/v_left_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/ll_travel_remind_date"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@id/iv_travel_remind_navigation"
+        style="@style/baseLayoutWWStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/navigation_white" />
+
+    <View
+        android:id="@id/v_right_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/iv_travel_remind_navigation"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@id/tv_current_travel_name"
+        style="@style/baseLayoutMMStyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/v_right_divider"
+        android:layout_toRightOf="@id/v_left_divider"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

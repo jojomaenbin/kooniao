@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMWHorizontalStyle"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_template_title"
+        style="@style/baseLayoutWWStyle"
+        android:textColor="@color/v020202"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/baseLayoutWWStyle"
+            android:textColor="@color/v909090"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/round_blue_tick"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

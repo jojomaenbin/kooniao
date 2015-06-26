@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:layout_toRightOf="@id/iv_go_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp" >
+
+            <TextView
+                android:id="@id/title"
+                style="@style/baseLayoutWMStyle"
+                android:background="@drawable/list_item_selector"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrow_down_gray"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/around_maps"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <FrameLayout
+        android:id="@id/fl_map_container"
+        style="@style/baseLayoutMMStyle" />
+
+</LinearLayout>

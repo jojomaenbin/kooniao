@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle" >
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_message_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/remind_message_icon" />
+
+        <RelativeLayout
+            android:id="@+id/rl_message"
+            style="@style/baseLayoutMMStyle"
+            android:layout_toRightOf="@id/iv_message_icon"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_message_type"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_message_time"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignBaseline="@id/tv_message_type"
+                android:layout_alignBottom="@id/tv_message_type"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/v909090"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_message_content"
+                style="@style/baseLayoutWMStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_message_time"
+                android:textColor="@color/v909090"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_message_operate"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_below="@id/rl_message"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_message_icon"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_infomation_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_retangle_bg"
+                android:paddingBottom="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="2dp"
+                android:text="@string/receive"
+                android:textColor="@color/v16b8eb"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_infomation_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/gray_retangle_bg"
+                android:paddingBottom="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="2dp"
+                android:text="@string/confuse"
+                android:textColor="@color/v909090"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_message_operate_status"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_below="@id/rl_message"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_message_icon"
+            android:background="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/handle"
+                android:textColor="@color/v909090"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_infomation_operate_status"
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/v909090"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

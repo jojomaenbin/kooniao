@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@id/ll_name"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@null" >
+
+        <TextView
+            android:id="@id/tv_small_travel_name"
+            style="@style/baseLayoutMWStyle"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ll_address"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@null" >
+
+        <TextView
+            android:id="@id/tv_arround_address"
+            style="@style/baseLayoutMWStyle"
+            android:drawableLeft="@drawable/detail_address"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ll_phone"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@null" >
+
+        <TextView
+            android:id="@id/tv_arround_phonenum"
+            style="@style/baseLayoutMWStyle"
+            android:drawableLeft="@drawable/detail_phone"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+</LinearLayout>

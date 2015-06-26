@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:fadeScrollbars="false" >
+
+    <LinearLayout style="@style/baseLinearLayoutMMVerticalStyle" >
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_line"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_line"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_line"
+                android:text="@string/relevant_line"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_hotel"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_hotel"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_hotel"
+                android:text="@string/relevant_hotel"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_location_ticket"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_location_ticket"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_location_ticket"
+                android:text="@string/relevant_location_ticket"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_amusement"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_amusement"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_amusement"
+                android:text="@string/relevant_amusement"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_food"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_food"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_food"
+                android:text="@string/relevant_food"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_shopping"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_shopping"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_shopping"
+                android:text="@string/relevant_shopping"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_group_product"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@id/tv_quick_search_group_product"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_group_product"
+                android:text="@string/relevant_group_product"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            android:id="@id/lr_quick_search_traffic"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@id/tv_quick_search_traffic"
+                style="@style/baseLayoutWWStyle"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_toRightOf="@id/tv_quick_search_traffic"
+                android:text="@string/relevant_traffic"
+                android:textColor="@color/v020202"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider_line_full"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

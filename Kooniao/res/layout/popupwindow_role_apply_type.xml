@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/translucence_black_dark" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/baseLayoutMWStyle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/type_for_select"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/white"
+            android:dividerHeight="0.5dp"
+            android:fastScrollEnabled="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <ImageView
+            android:id="@id/iv_close"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/close_white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:layout_marginTop="30dp"
+    android:background="@color/white" >
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:id="@id/ll_around_header"
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@drawable/list_item_selector"
+        android:padding="10dp" >
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/v16b8eb" />
+
+        <TextView
+            android:id="@id/tv_arround_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:text="@string/around_scenic"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <com.kooniao.travel.customwidget.LinearListLayout
+        android:id="@id/lv_around_list"
+        style="@style/baseLayoutMMStyle"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

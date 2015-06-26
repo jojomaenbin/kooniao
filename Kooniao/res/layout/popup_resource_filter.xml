@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/translucence_black_dark"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@color/white" >
+
+        <!-- 价格区间 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/price_interval"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                tools:ignore="RtlSymmetry" >
+
+                <EditText
+                    android:id="@id/et_min_price"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/gray_round_retancle_bg"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/v5d7785"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@id/et_max_price"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/gray_round_retancle_bg"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/destination"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@id/tv_destination"
+                style="@style/baseLayoutMMStyle"
+                android:background="@drawable/list_item_selector"
+                android:drawableEnd="@drawable/arrow_right_gray_min"
+                android:drawableRight="@drawable/arrow_right_gray_min"
+                android:gravity="center_vertical"
+                android:text="@string/all_area"
+                android:textColor="@color/v16b8eb"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <RelativeLayout
+            style="@style/baseLayoutMMStyle"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                style="@style/baseLinearLayoutWWHorizontalStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/blue_round_press_bg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/area_location_white" />
+
+                <TextView
+                    android:id="@id/tv_locating_area"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:text="@string/locating"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/ll_relocating"
+                style="@style/baseLinearLayoutWWHorizontalStyle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:ignore="UseCompoundDrawables" >
+
+                <ImageView
+                    android:id="@id/iv_relocating"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/locating_reload" />
+
+                <TextView
+                    android:id="@id/tv_relocating"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:text="@string/relocation"
+                    android:textColor="@color/v707070"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/product_type"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@id/tv_product_type"
+                style="@style/baseLayoutMWStyle"
+                android:text="@string/all_type"
+                android:textColor="@color/v16b8eb"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@id/tv_line"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_filter_selector"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/line"
+                android:textColor="@color/book_text_selector"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@id/tv_hotel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_filter_selector"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/hotel"
+                android:textColor="@color/book_text_selector"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_scenic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_filter_selector"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/scenic"
+                android:textColor="@color/book_text_selector"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMHorizontalStyle"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@id/tv_amusement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_filter_selector"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/amusement"
+                android:textColor="@color/book_text_selector"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@id/tv_food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_filter_selector"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/food"
+                android:textColor="@color/book_text_selector"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@id/tv_shopping"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_filter_selector"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/shopping"
+                android:textColor="@color/book_text_selector"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/blue_retancle_button_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

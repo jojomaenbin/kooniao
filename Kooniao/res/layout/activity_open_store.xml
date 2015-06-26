@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <!-- titlebar -->
+
+    <RelativeLayout
+        android:id="@id/scenic_detail_layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/i_want_to_open_a_store"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/open_store_logo" />
+
+        <EditText
+            android:id="@id/et_store_name"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/hint_open_store_name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_margin_left_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/register_phone" />
+
+        <EditText
+            android:id="@id/et_store_contact_phone"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/hint_open_store_contact_phone"
+            android:inputType="phone"
+            android:maxLength="20"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <TextView
+        android:id="@id/tv_open_store"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/vd0d0d0"
+        android:gravity="center"
+        android:text="@string/open_store"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:id="@id/iv_check_box"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            
+            android:src="@drawable/check_box_able" />
+
+        <TextView
+            android:id="@id/tv_open_store_tips"
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_check_box"
+            android:text="@string/open_store_tips_one"
+            android:textColor="@color/v909090"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@id/tv_open_store_agreement"
+            style="@style/baseLayoutWWStyle"
+            android:layout_toRightOf="@id/tv_open_store_tips"
+            android:text="@string/open_store_agreement"
+            android:textColor="@color/v16b8eb"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 底部bar -->
+    <drawable name="bottom_tabbar_selected">#16B8EB</drawable>
+    <drawable name="bottom_tabbar_normal">#909090</drawable>
+    <drawable name="title_bar_tab_normal">#020202</drawable>
+
+    <!-- 基本色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- 黑色深半透 -->
+    <color name="translucence_black_dark">#DD000000</color>
+    <!-- 输入框提示字体颜色 -->
+    <color name="vd0d0d0">#D0D0D0</color>
+    <color name="v55000000">#55000000</color>
+    <!-- 黑色浅半透 -->
+    <color name="translucence_black_light">#66000000</color>
+    <!-- 白色半透 -->
+    <color name="translucence_white">#CCFFFFFF</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 全局背景色 -->
+    <color name="main_bg">#EFEFF4</color>
+    <!-- 分割线 -->
+    <color name="divider_line_bg">#E5E5E5</color>
+    <color name="vefeff4">#EFEFF4</color>
+    <color name="ve73222">#E73222</color>
+    <!-- 蓝色 -->
+    <color name="v16b8eb">#16B8EB</color>
+    <!-- 70%蓝色 -->
+    <color name="vaa16b8eb">#AA16B8EB</color>
+    <!-- 文字默认颜色 -->
+    <color name="v020202">#020202</color>
+    <!-- 提示文字颜色 -->
+    <color name="v909090">#909090</color>
+    <!-- 70%提示文字颜色 -->
+    <color name="vaa909090">#AA909090</color>
+    <color name="v31a9b6">#31A9B6</color>
+    <color name="vf2f2f2">#F2F2F2</color>
+    <color name="vc7d3d7">#C7D3D7</color>
+    <color name="v7c7c7c">#7C7C7C</color>
+    <color name="v666666">#666666</color>
+    <!-- 深蓝色按钮 -->
+    <color name="v2f7ea6">#2F7EA6</color>
+    <!-- 深蓝色按钮按下效果 -->
+    <color name="v116088">#116088</color>
+    <!-- 灰色按钮 -->
+    <color name="vcfcfcf">#CFCFCF</color>
+    <!-- 深灰色文字颜色 -->
+    <color name="v78797a">#78797A</color>
+    <!-- 订单详细背景 -->
+    <color name="v5d7785">#5D7785</color>
+    <color name="ve6e6e6">#E6E6E6</color>
+    <color name="v323232">#323232</color>
+    <color name="vff6f00">#FF6F00</color>
+    <color name="v707070">#707070</color>
+    <color name="vb0b0b0">#B0B0B0</color>
+    <color name="ve5e5e5">#E5E5E5</color>
+    <!-- 红色 -->
+    <color name="vdd3a2c">#DD3A2C</color>
+    <!-- 橙色 -->
+    <color name="vd07128">#D07128</color>
+    <!-- 提交订单按钮背景色，深橙色 -->
+    <color name="vc56b25">#C56B25</color>
+    <!-- 订单金额背景色，浅橙色 -->
+    <color name="vd48d56">#D48D56</color>
+    <!-- 订单价格字体颜色 -->
+    <color name="ve73626">#E73626</color>
+    <!-- 订单已提交顶部背景颜色，绿色 -->
+    <color name="v7ac142">#7AC142</color>
+    <!-- 订单已提交顶部背景颜色，70%绿色 -->
+    <color name="vaa7ac142">#AA7AC142</color>
+    <!-- 评论输入框底色 -->
+    <color name="vf5f5f5">#F5F5F5</color>
+    <!-- 选择套餐确定按钮底色 -->
+    <color name="veb4015">#EB4015</color>
+
+</resources>

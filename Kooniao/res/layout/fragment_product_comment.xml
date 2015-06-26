@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle" >
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <com.kooniao.travel.customwidget.LinearListLayout
+            android:id="@id/ll_product_comment"
+            style="@style/baseLayoutMMStyle"
+            android:animateLayoutChanges="true"
+            android:background="@color/main_bg" />
+
+        <ProgressBar
+            android:id="@id/progressBar"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:indeterminate="true"
+            android:visibility="visible" />
+
+        <include layout="@layout/sub_no_data" />
+    </RelativeLayout>
+
+</ScrollView>

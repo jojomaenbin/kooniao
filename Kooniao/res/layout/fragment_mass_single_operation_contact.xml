@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <FrameLayout
+        android:id="@id/ll_contact_bottom"
+        style="@style/baseLayoutMWStyle"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@null" >
+
+        <LinearLayout
+            android:id="@id/ll_contact_mass_texting_tips"
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:background="@color/white"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@id/tv_contact_select_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="@string/select_all"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_contact_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:textColor="@color/v909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_contact_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="right"
+                android:padding="15dp"
+                android:text="@string/confirm"
+                android:textColor="@color/v16b8eb"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_contact_mass_texting"
+            style="@style/baseLayoutMWStyle"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:text="@string/mass_texting"
+            android:textColor="@color/v16b8eb"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/baseLayoutMMStyle"
+        android:layout_above="@id/ll_contact_bottom" >
+
+        <com.kooniao.travel.customwidget.SwipeListView
+            android:id="@id/slv_contact_list"
+            style="@style/normalListViewStyle" />
+
+        <TextView
+            android:id="@id/tv_contact_selected_tips"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sidebar_toast_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <com.kooniao.travel.customwidget.SideBar
+            xmlns:sidebar="http://schemas.android.com/apk/res-auto"
+            android:id="@id/sb_right"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            sidebar:isLocation="false" />
+    </FrameLayout>
+
+</RelativeLayout>

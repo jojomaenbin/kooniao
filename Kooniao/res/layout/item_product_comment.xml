@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@id/iv_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_default_avatar" />
+
+        <TextView
+            android:id="@id/tv_user_name"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignTop="@id/iv_avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:paddingTop="3dp"
+            android:textColor="@color/v16b8eb"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@id/rb_product_comment"
+            style="@style/CustomRatingBarSmall"
+            android:layout_alignTop="@id/tv_user_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_user_name"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0" />
+
+        <TextView
+            android:id="@id/tv_product_comment_content"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignLeft="@id/tv_user_name"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/v7c7c7c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_product_comment_date"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignLeft="@id/tv_user_name"
+            android:layout_below="@id/tv_product_comment_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/v909090"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@id/iv_comment_reply"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignBottom="@id/tv_product_comment_date"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/comment_blue"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

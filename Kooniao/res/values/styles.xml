@@ -1,0 +1,212 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/ActivitySwitchAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActivitySwitchAnimation" parent="android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="baseLayoutMMStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="baseLayoutMWStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="baseLayoutWWStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="baseLayoutWMStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="baseLinearLayoutMMHorizontalStyle" parent="@style/baseLayoutMMStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="baseLinearLayoutMWVerticalStyle" parent="@style/baseLayoutMWStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="baseLinearLayoutWMVerticalStyle" parent="@style/baseLayoutWMStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="baseLinearLayoutMMVerticalStyle" parent="@style/baseLayoutMMStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="baseLinearLayoutMWHorizontalStyle" parent="@style/baseLayoutMWStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="baseLinearLayoutWWHorizontalStyle" parent="@style/baseLayoutWWStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="baseLinearLayoutWWVerticalStyle" parent="@style/baseLayoutWWStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="baseScrollViewMMStyle" parent="@style/baseLayoutMMStyle">
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="horizontalScrollViewItemStyle" parent="@style/baseLayoutWWStyle">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/bottom_bar_text_selector</item>
+    </style>
+
+    <style name="bottomBarRadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@drawable/bottom_bar_text_selector</item>
+    </style>
+    
+    <style name="ProductRadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/product_category_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:drawablePadding">-8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@drawable/product_radio_text_selector</item>
+    </style>
+
+    <style name="topBarStyle" parent="@style/baseLayoutMMStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="productTipsTextViewStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="bottombarOperateTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textViewTitleBarStyle" parent="@style/baseLayoutWWStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/v020202</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PopupAnimationFromBottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="PopupAnimationFromRight" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="normalListViewStyle" parent="@style/baseLayoutMMStyle">
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="ProgressDialogTheme" parent="@style/BaseDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CatalogRadioButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/product_add_selector</item>
+        <item name="android:textColor">@drawable/bottom_bar_text_selector</item>
+    </style>
+
+    <style name="CustomRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_small_bg</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_bg</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+
+</resources>

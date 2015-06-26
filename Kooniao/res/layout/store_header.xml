@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@id/iv_store_bg"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_bg" />
+
+        <ImageView
+            android:id="@id/iv_store"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/open_a_store_white_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@id/iv_share"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/iv_store"
+            android:background="@drawable/share_white_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWVerticalStyle"
+            android:layout_below="@id/iv_share"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@id/iv_store_logo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/user_default_avatar"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@id/tv_store_name"
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/tv_store_user_name"
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_store_status_pause"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/translucence_black_dark"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@id/ll_store_status"
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@id/tv_store_name_pause"
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/store_status_pause"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:layout_below="@id/ll_store_status"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/store_status_pause_reson"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@id/tv_store_pause_reason"
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/titlebar_backward_arrow_white_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/store_product_stick_top"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_no_data"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/white"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <View
+        android:id="@+id/no_data_margin_top"
+        style="@style/baseLayoutWWStyle"
+        android:layout_marginTop="80dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_no_data"
+        style="@style/baseLayoutWWStyle"
+        android:contentDescription="@null"
+        android:src="@drawable/no_data" />
+
+</LinearLayout>

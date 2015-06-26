@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@color/white" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/pay_commission_date_colon"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_pay_commission_date"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/pay_commission_way_colon"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_pay_commission_way"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/pay_commission_amount_colon"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_pay_commission_amount"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/remark_colon"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@id/tv_remark"
+            style="@style/baseLayoutMWStyle"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/v020202"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_margin_left_right_10" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/white" >
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <com.kooniao.travel.customwidget.LinearListLayout
+            android:id="@id/ll_product_combine"
+            style="@style/baseLayoutMMStyle"
+            android:animateLayoutChanges="true" />
+
+        <include layout="@layout/sub_no_data" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arround_type">
+        <item>景点</item>
+        <item>酒店</item>
+        <item>美食</item>
+        <item>购物</item>
+        <item>娱乐</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_more"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/translucence_white"
+        android:baselineAligned="false"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@id/iv_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/scan_selector"
+            android:gravity="center"
+            android:text="@string/flicking"
+            android:textColor="@color/v020202"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@id/iv_set_up_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/open_a_store_selector"
+            android:gravity="center"
+            android:text="@string/my_store"
+            android:textColor="@color/v020202"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@id/iv_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_selector"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/v020202"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

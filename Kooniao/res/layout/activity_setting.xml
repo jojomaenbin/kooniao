@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/setting"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <include layout="@layout/divider_line_full_margin_top_20" />
+
+    <RelativeLayout
+        android:id="@id/lr_setting_personal_data"
+        style="@style/baseLayoutMWStyle"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/personal_data"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_setting_username"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:text="@string/has_no_login"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <include layout="@layout/divider_line_full_margin_top_20" />
+
+    <RelativeLayout
+        android:id="@id/lr_setting_clear_cache"
+        style="@style/baseLayoutMWStyle"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/clear_cache"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_setting_cache_size"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <include layout="@layout/divider_line_full_margin_top_20" />
+
+    <RelativeLayout
+        android:id="@id/lr_setting_sofware_rating"
+        style="@style/baseLayoutMWStyle"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/sofware_rating"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_margin_left_10" />
+
+    <RelativeLayout
+        android:id="@id/lr_setting_about_kooniao"
+        style="@style/baseLayoutMWStyle"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/about_kooniao"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:id="@id/ll_setting_log_out"
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:visibility="gone" >
+
+        <include layout="@layout/divider_line_full_margin_top_20" />
+
+        <RelativeLayout
+            android:id="@id/lr_setting_log_out"
+            style="@style/baseLayoutMWStyle"
+            android:background="@drawable/list_item_selector"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/logout"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:textColor="@color/v16b8eb"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_full" />
+    </LinearLayout>
+
+</LinearLayout>

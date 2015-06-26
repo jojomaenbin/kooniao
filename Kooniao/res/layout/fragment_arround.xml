@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/navigationbar_backward_kooniao" />
+
+        <TextView
+            android:id="@id/tv_city_title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_down_blue"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/default_city_gz"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_map_change"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/map_exchange_data_selector" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <com.kooniao.travel.customwidget.PagerSlidingTabStrip
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/tabs_arround"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/vp_arround"
+        style="@style/baseLayoutMWStyle" />
+
+</LinearLayout>

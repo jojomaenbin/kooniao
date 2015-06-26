@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/fl_travel_detail_popupmenu"
+    style="@style/baseLayoutMWStyle"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="75dp"
+        android:background="@color/translucence_black_dark"
+        android:orientation="vertical" >
+
+        <ScrollView
+            style="@style/baseLayoutMMStyle"
+            android:background="@color/transparent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/baseLayoutMWStyle"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/tv_travel_detail_popupmenu_goto_top"
+                    style="@style/baseLayoutMWStyle"
+                    android:drawableLeft="@drawable/popupwindow_menu_goto_top"
+                    android:drawablePadding="10dp"
+                    android:padding="15dp"
+                    android:text="@string/to_the_top"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <com.kooniao.travel.customwidget.LinearListLayout
+                    android:id="@id/lv_menu_travel_list"
+                    style="@style/baseLayoutMMStyle"
+                    android:animateLayoutChanges="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@id/ll_travel_detail_fee_desc"
+                    style="@style/baseLinearLayoutMWVerticalStyle"
+                    android:background="@null" >
+
+                    <TextView
+                        android:id="@id/tv_travel_detail_popupmenu_fee"
+                        style="@style/baseLayoutMWStyle"
+                        android:drawableLeft="@drawable/popupwindow_menu_cost"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="@string/travel_detail_fee"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/tv_travel_detail_popupmenu_comment"
+                    style="@style/baseLayoutMWStyle"
+                    android:drawableLeft="@drawable/popupwindow_menu_comment"
+                    android:drawablePadding="10dp"
+                    android:padding="15dp"
+                    android:text="@string/comment"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@id/tv_travel_detail_popupmenu_guide_info"
+                    style="@style/baseLayoutMWStyle"
+                    android:drawableLeft="@drawable/popupwindow_menu_guide_info"
+                    android:drawablePadding="10dp"
+                    android:padding="15dp"
+                    android:text="@string/ta_line"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

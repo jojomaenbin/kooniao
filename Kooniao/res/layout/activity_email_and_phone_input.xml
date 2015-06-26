@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/forget_password"
+            android:textColor="@color/v020202"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/divider_line_bg" />
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@id/et_input"
+            style="@style/baseLayoutMWStyle"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_clear"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:hint="@string/hint_reset_key"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/v020202"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@id/iv_clear"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_clear_selector"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <TextView
+        android:id="@id/tv_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_round_button_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

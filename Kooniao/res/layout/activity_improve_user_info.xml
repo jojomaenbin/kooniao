@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/perfect_user_info"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_skip"
+            style="@style/baseLayoutWMStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/skip"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <ScrollView
+        style="@style/baseLayoutMMStyle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:paddingTop="25dp" >
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:id="@id/rl_select_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_selector" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/avatar"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@id/iv_avatar_arrow_go"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow_down_gray" />
+
+                <ImageView
+                    android:id="@id/iv_user_avatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_avatar_arrow_go"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:src="@drawable/user_default_avatar" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <RelativeLayout
+                android:id="@id/rl_improve_select_sex"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_selector" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/sex"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@id/iv_sex_arrow_go"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_down_gray" />
+
+                <TextView
+                    android:id="@id/tv_sex"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_sex_arrow_go"
+                    android:text="@string/sex_woman"
+                    android:textColor="@color/vd0d0d0"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/divider_line_bg" />
+
+            <RelativeLayout
+                android:id="@id/rl_improve_apply"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_selector" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_type_select"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@id/iv_user_type_arrow_go"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow_right_gray" />
+
+                <TextView
+                    android:id="@id/tv_apply_status"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_user_type_arrow_go"
+                    android:text="@string/apply_now"
+                    android:textColor="@color/v16b8eb"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/user_type_select_tips"
+                android:textColor="@color/v909090"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

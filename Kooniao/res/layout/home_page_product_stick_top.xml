@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMWStyle" >
+
+    <HorizontalScrollView
+        style="@style/baseLayoutWWStyle"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:background="@null" >
+
+            <TextView
+                android:id="@id/tv_category_line"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_line_selector"
+                android:text="@string/line" />
+
+            <TextView
+                android:id="@id/tv_category_hotel"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_hotel_selector"
+                android:text="@string/hotel" />
+
+            <TextView
+                android:id="@id/tv_category_scenic"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_scenic_selector"
+                android:text="@string/category_scenic" />
+
+            <TextView
+                android:id="@id/tv_category_shopping"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_shopping_selector"
+                android:text="@string/category_shopping" />
+
+            <TextView
+                android:id="@id/tv_category_amusement"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_amusement_selector"
+                android:text="@string/category_amusement" />
+
+            <TextView
+                android:id="@id/tv_category_food"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_food_selector"
+                android:text="@string/category_food" />
+
+            <TextView
+                android:id="@id/tv_category_traffic"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_traffic_selector"
+                android:text="@string/category_traffic"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_category_group_product"
+                style="@style/horizontalScrollViewItemStyle"
+                android:drawableTop="@drawable/category_group_product_selector"
+                android:text="@string/category_group_product" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

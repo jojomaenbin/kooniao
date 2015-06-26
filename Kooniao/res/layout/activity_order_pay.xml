@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/order_pay"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_right_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:background="@drawable/red_retangle_round_bg"
+        android:gravity="center"
+        android:text="@string/pay_right_now"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ScrollView
+        style="@style/baseLayoutMWStyle"
+        android:layout_above="@id/tv_pay_right_now"
+        android:layout_below="@id/rl_title_bar"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <RelativeLayout
+                style="@style/baseLayoutMWStyle"
+                android:background="#5E696E"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@id/tv_order_status"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/iv_order_edit"
+                    android:drawableLeft="@drawable/order_detail_icon_white"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/order_submit_success"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_below="@id/tv_order_status"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/order_num_colon"
+                    android:textColor="#CBCDCE"
+                    android:textSize="13sp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv_package_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/vff6f00"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list_default_cover" />
+
+                <TextView
+                    android:id="@+id/tv_package_title"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignTop="@id/iv_package_logo"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_package_logo"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#4F4F4F"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_package_type"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignBottom="@id/iv_package_logo"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_package_logo"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/combo_type_colon"
+                    android:textColor="@color/v909090"
+                    android:textSize="13sp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/pay_type_colon"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_payment_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/should_pay_money_colon"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_should_pay_sum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="#E73626"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp"
+                android:text="@string/pay_way"
+                android:textColor="#696969"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                tools:ignore="RtlSymmetry,RtlHardcoded" >
+
+                <ImageView
+                    android:id="@+id/iv_pay_way_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/pay_alipay" />
+
+                <TextView
+                    android:id="@+id/tv_pay_way"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_pay_way_logo"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_way_alipay"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/single_choice"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

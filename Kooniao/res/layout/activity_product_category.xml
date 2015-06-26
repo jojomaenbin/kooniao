@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/productcategory"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_below="@id/top_bar"
+        android:background="@color/divider_line_bg" />
+
+    <ScrollView
+        style="@style/baseLayoutMMStyle"
+        android:layout_above="@id/tv_next_step"
+        android:layout_below="@id/divider_line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_participant_info"
+            style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:padding="15dp"
+                android:text="@string/checkfirst"
+                android:textColor="@color/v707070" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/divider_line_bg" />
+
+            <RadioGroup
+                android:id="@+id/product_radiogroup"
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:background="@color/white"
+                android:padding="7dp" >
+
+                <com.kooniao.travel.view.materialdesign.ProductRadioButton
+                    android:id="@+id/tv_group_product"
+                    style="@style/ProductRadioButtonStyle"
+                    android:checked="true"
+                    android:drawableTop="@drawable/group_product_selector"
+                    android:text="@string/group_product"
+                    android:textSize="12sp" />
+
+                <com.kooniao.travel.view.materialdesign.ProductRadioButton
+                    android:id="@id/tv_line_product"
+                    style="@style/ProductRadioButtonStyle"
+                    android:drawableTop="@drawable/line_product_selector"
+                    android:text="@string/line_product"
+                    android:textSize="12sp" />
+
+                <com.kooniao.travel.view.materialdesign.ProductRadioButton
+                    android:id="@id/tv_single_product"
+                    style="@style/ProductRadioButtonStyle"
+                    android:drawableTop="@drawable/single_product_selector"
+                    android:text="@string/single_product"
+                    android:textSize="12sp" />
+
+                <com.kooniao.travel.view.materialdesign.ProductRadioButton
+                    android:id="@+id/tv_find_resource"
+                    style="@style/ProductRadioButtonStyle"
+                    android:checked="false"
+                    android:drawableTop="@drawable/find_resouce_selector"
+                    android:text="@string/find_resource"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/divider_line_bg" />
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:padding="15dp"
+                android:text="@string/checksecond"
+                android:textColor="@color/v707070" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/divider_line_bg" />
+
+            <TextView
+                android:id="@+id/iv_no_data"
+                style="@style/baseLayoutMWStyle"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="@string/no_date"
+                android:textColor="@color/vb0b0b0"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@id/iv_check_box"
+                style="@style/baseLayoutMWStyle"
+                android:background="@color/white"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:padding="15dp"
+                android:text="@string/please_check"
+                android:textColor="@color/vb0b0b0"
+                android:textSize="15sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/lv_third_layout"
+                android:visibility="gone"
+                style="@style/baseLinearLayoutMWVerticalStyle" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"
+                    android:background="@color/divider_line_bg" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:padding="15dp"
+                    android:text="@string/checkthird"
+                    android:textColor="@color/v707070" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"
+                    android:background="@color/divider_line_bg" />
+
+                <TextView
+                    android:id="@+id/iv_check_third_box"
+                    style="@style/baseLayoutMWStyle"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:padding="15dp"
+                    android:text="@string/please_check"
+                    android:textColor="@color/vb0b0b0"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/tv_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_retancle_button_selector"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

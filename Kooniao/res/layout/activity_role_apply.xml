@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/user_type_apply"
+            android:textColor="@color/v020202"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/tv_tour_apply_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/cancel"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <ScrollView
+        style="@style/baseLayoutMMStyle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:paddingTop="25dp" >
+
+            <include layout="@layout/divider_line_full" />
+
+            <RelativeLayout
+                android:id="@id/rl_apply_select_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_selector" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/i_am"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@id/iv_user_type_arrow_go"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow_right_gray" />
+
+                <TextView
+                    android:id="@id/tv_apply_type"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_user_type_arrow_go"
+                    android:text="@string/select_type"
+                    android:textColor="@color/v909090"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/divider_line_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/real_name"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutWWHorizontalStyle"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@id/et_real_name"
+                    style="@style/baseLayoutMMStyle"
+                    android:background="@null"
+                    android:hint="@string/hint_input_real_name"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/vd0d0d0" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_margin_left_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/certification_num"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@id/et_certification_num"
+                    style="@style/baseLayoutMMStyle"
+                    android:background="@null"
+                    android:hint="@string/hint_input_certification_num"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/vd0d0d0" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/baseLayoutWMStyle"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/phone_num"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@id/et_phone_num"
+                    style="@style/baseLayoutMMStyle"
+                    android:background="@null"
+                    android:hint="@string/hint_input_phone_num"
+                    android:inputType="phone"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/vd0d0d0" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_line_full" />
+
+            <Button
+                android:id="@id/bt_submit_application"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/green_round_button_selector"
+                android:text="@string/submit_application"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

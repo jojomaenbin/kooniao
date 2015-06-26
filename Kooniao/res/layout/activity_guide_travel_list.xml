@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMWStyle" >
+
+    <com.kooniao.travel.customwidget.MesureTopScrollView
+        android:id="@id/sv_guide_travel_list"
+        style="@style/baseLayoutMMStyle"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+                <ImageView
+                    android:id="@id/iv_guide_travel_list_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_tour_bg" />
+
+                <!-- 高斯模糊覆盖 -->
+
+                <ImageView
+                    android:id="@id/iv_guide_travel_list_suspend"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@id/iv_go_back"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/titlebar_backward_arrow_white_selector" />
+
+                <LinearLayout
+                    style="@style/baseLinearLayoutMMVerticalStyle"
+                    android:layout_below="@id/iv_go_back"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@id/iv_guide_travel_avatar"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/user_default_avatar" />
+
+                    <TextView
+                        android:id="@id/tv_guide_name"
+                        style="@style/baseLayoutWWStyle"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        style="@style/baseLinearLayoutWWHorizontalStyle"
+                        android:layout_marginTop="2dp"
+                        android:background="@null" >
+
+                        <TextView
+                            android:id="@id/tv_guide_sex"
+                            style="@style/baseLayoutWWStyle"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@id/tv_guide_city"
+                            style="@style/baseLayoutWWStyle"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/v55000000"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/popupwindow_menu_guide_info" />
+
+                    <TextView
+                        style="@style/baseLayoutWMStyle"
+                        android:gravity="center"
+                        android:text="@string/travel"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.kooniao.travel.customwidget.LinearListLayout
+                android:id="@id/ll_guide_travel_list"
+                style="@style/baseLinearLayoutMWVerticalStyle"
+                android:background="@color/main_bg" />
+        </LinearLayout>
+    </com.kooniao.travel.customwidget.MesureTopScrollView>
+
+    <LinearLayout
+        android:id="@id/layout_guide_travel_list_back"
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/v55000000"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@id/iv_quick_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="left"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_arrow_white_selector" />
+    </LinearLayout>
+
+</FrameLayout>

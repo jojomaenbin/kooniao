@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:paddingBottom="20dp" >
+
+    <LinearLayout
+        android:id="@id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@id/iv_store_logo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_default_avatar" />
+
+            <TextView
+                android:id="@id/tv_store_name"
+                style="@style/baseLayoutWWStyle"
+                android:layout_alignTop="@id/iv_store_logo"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/tv_pay_commission"
+                android:layout_toRightOf="@id/iv_store_logo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@id/tv_store_contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_store_logo"
+                android:layout_alignLeft="@id/tv_store_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/v16b8eb"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_pay_commission"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/orange_retangle_bg"
+                android:gravity="center"
+                android:text="@string/pay_commission"
+                android:textColor="@color/vc56b25"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_margin_left_right_10" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:baselineAligned="false"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/total_sell"
+                    android:textColor="@color/v020202"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@id/count"
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/vdd3a2c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/per_order"
+                    android:textColor="@color/v020202"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/commission_total"
+                    android:textColor="@color/v020202"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@id/money"
+                    style="@style/baseLayoutWWStyle"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/vdd3a2c"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

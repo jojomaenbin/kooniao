@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout style="@style/baseLayoutMMStyle" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMMVerticalStyle"
+            android:paddingBottom="55dp" >
+
+            <include
+                android:id="@id/view_daylist_start"
+                layout="@layout/sub_daylist_start"
+                android:visibility="gone" />
+
+            <com.kooniao.travel.customwidget.LinearListLayout
+                android:id="@id/ll_product_line"
+                style="@style/baseLayoutMMStyle" />
+
+            <include
+                android:id="@id/view_daylist_end"
+                layout="@layout/sub_daylist_end"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include layout="@layout/sub_no_data" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/pay_commission_detail"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <ScrollView
+        style="@style/baseLayoutMMStyle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pay_commission_date"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_pay_commission_date"
+                    style="@style/baseLayoutMMStyle"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pay_commission_way"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/tv_pay_commission_way"
+                    style="@style/baseLayoutMMStyle"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/pay_commission_way_offline"
+                    android:textColor="@color/v909090"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pay_commission_amount"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@id/et_pay_commission_amount"
+                    style="@style/baseLayoutMMStyle"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/pay_commission_amount_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/v020202"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/baseLinearLayoutWWHorizontalStyle"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pay_commission_amount_residue"
+                    android:textColor="@color/v909090"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@id/tv_pay_commission_residue"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/vc56b25"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/need_to_pay"
+                    android:textColor="@color/v909090"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/remark"
+                android:textColor="@color/v909090"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@id/et_pay_commission_remark"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="@string/remark_hint"
+                android:padding="10dp"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/vcfcfcf"
+                android:gravity="center"
+                android:text="@string/payment"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

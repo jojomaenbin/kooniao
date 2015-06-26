@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/translucence_black_dark" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/start_city"
+            android:textColor="@color/v707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_start_city"
+            style="@style/baseLayoutMMStyle"
+            android:background="@drawable/list_item_selector"
+            android:drawableEnd="@drawable/arrow_right_gray_min"
+            android:drawableRight="@drawable/arrow_right_gray_min"
+            android:gravity="center_vertical"
+            android:text="@string/all_city"
+            android:textColor="@color/v16b8eb"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/blue_round_press_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@null"
+                android:src="@drawable/area_location_white" />
+
+            <TextView
+                android:id="@id/tv_locating_area"
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/locating"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_relocating"
+            style="@style/baseLinearLayoutWWHorizontalStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@id/iv_relocating"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@null"
+                android:src="@drawable/locating_reload" />
+
+            <TextView
+                android:id="@id/tv_relocating"
+                style="@style/baseLayoutWWStyle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/relocation"
+                android:textColor="@color/v707070"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

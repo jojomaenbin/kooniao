@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/rl_about_kooniao_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_close_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/add_template"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/tv_finish"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/tick_blue_max" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <ScrollView style="@style/baseScrollViewMMStyle" >
+
+        <LinearLayout style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMWHorizontalStyle"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/template_title"
+                    android:textColor="@color/v909090"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_template_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/hint_template_title"
+                    android:inputType="text"
+                    android:maxLength="8"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/baseLayoutMWStyle"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_commision_way"
+                    style="@style/baseLayoutWWStyle"
+                    android:text="@string/commission_way"
+                    android:textColor="@color/v909090"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_commision_way"
+                    style="@style/baseLinearLayoutMWHorizontalStyle"
+                    android:layout_below="@id/tv_commision_way"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_according_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hollow_retangle_selector"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_according_money"
+                            style="@style/baseLayoutWWStyle"
+                            android:text="@string/according_money"
+                            android:textColor="@color/vd0d0d0"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_according_percent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/hollow_retangle_selector"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_according_percent"
+                            style="@style/baseLayoutWWStyle"
+                            android:text="@string/according_percent"
+                            android:textColor="@color/vd0d0d0"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_commission_sum"
+                    style="@style/baseLayoutMWStyle"
+                    android:layout_below="@+id/ll_commision_way"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/please_input_commission_sum"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@color/vd0d0d0"
+                    android:textColorHint="@color/vd0d0d0"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dafault_template"
+                    android:textColor="@color/v020202"
+                    android:textSize="16sp" />
+
+                <com.kooniao.travel.view.materialdesign.SwitchButton
+                    android:id="@+id/sb_default_template"
+                    style="@style/baseLayoutWWStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/commission_remark"
+                android:textColor="@color/v909090"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_commission_remark"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/white"
+                android:gravity="start|top"
+                android:hint="@string/hint_commission_remark"
+                android:inputType="text"
+                android:maxLength="200"
+                android:padding="10dp"
+                android:textColor="@color/vd0d0d0"
+                android:textColorHint="@color/vd0d0d0"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

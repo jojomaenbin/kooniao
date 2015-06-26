@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/translucence_black_dark" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:layout_centerVertical="true"
+        android:background="@null" >
+
+        <TextView
+            style="@style/baseLayoutMWStyle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/alarm_change"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@id/iv_alarm_accept"
+            style="@style/baseLayoutMWStyle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/alarm_accept"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@id/iv_alarm_not_accept"
+            style="@style/baseLayoutMWStyle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/alarm_not_accept"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@id/iv_close"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/close_white" />
+    </LinearLayout>
+
+</RelativeLayout>

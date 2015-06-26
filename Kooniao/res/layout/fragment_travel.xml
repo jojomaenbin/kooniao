@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:animateLayoutChanges="true"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@id/rl_recommand_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/navigationbar_backward_kooniao" />
+
+        <TextView
+            android:id="@id/tv_place_starting"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_down_gray"
+            android:gravity="center_vertical"
+            android:textColor="@color/v020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_place_starting_tip"
+            style="@style/baseLayoutWMStyle"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/tv_place_starting"
+            android:gravity="center_vertical"
+            android:text="@string/starting"
+            android:textColor="@color/v020202"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@id/iv_scan"
+            style="@style/baseLayoutWMStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/scan_selector" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@id/swipe_refresh_layout"
+        style="@style/baseLayoutMMStyle" >
+
+        <FrameLayout style="@style/baseLayoutMMStyle" >
+
+            <ListView
+                android:id="@id/lv_travel"
+                style="@style/normalListViewStyle" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMVerticalStyle"
+                android:paddingTop="180dp" >
+
+                <include layout="@layout/sub_no_data" />
+            </LinearLayout>
+        </FrameLayout>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

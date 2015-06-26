@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/main_bg" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@id/travel_detail_layout_titlebar"
+        android:layout_alignParentTop="true"
+        layout="@layout/sub_travel_detail_titlebar" />
+
+    <!-- 底部操作bar -->
+
+    <include
+        android:id="@id/travel_detail_layout_bottombar"
+        android:layout_alignParentBottom="true"
+        layout="@layout/sub_travel_detail_bottombar_operate" />
+
+    <!-- 中间 -->
+
+    <ScrollView
+        android:id="@id/sv_middle"
+        style="@style/baseLayoutMMStyle"
+        android:layout_above="@id/travel_detail_layout_bottombar"
+        android:layout_below="@id/travel_detail_layout_titlebar"
+        android:fadeScrollbars="false"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:animateLayoutChanges="true" >
+
+            <!-- 顶部封面图 -->
+
+            <include
+                android:id="@id/travel_detail_layout_cover"
+                layout="@layout/sub_travel_detail_cover" />
+
+            <!-- 行程名称 -->
+
+            <include
+                android:id="@id/travel_detail_layout_name"
+                layout="@layout/sub_travel_detail_title" />
+
+            <!-- 行程描述 -->
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/ht_travel_detail_desc"
+                style="@style/baseLayoutMWStyle"
+                android:layout_marginTop="30dp" />
+
+            <include
+                android:id="@id/view_daylist_start"
+                layout="@layout/sub_daylist_start"
+                android:visibility="gone" />
+
+            <com.kooniao.travel.customwidget.LinearListLayout
+                android:id="@id/lv_travel_list"
+                style="@style/baseLayoutMMStyle"
+                android:background="@color/main_bg" />
+
+            <include
+                android:id="@id/view_daylist_end"
+                layout="@layout/sub_daylist_end"
+                android:visibility="gone" />
+
+            <!-- 费用说明 -->
+
+            <com.kooniao.travel.customwidget.HeadText
+                android:id="@id/ht_travel_detail_fee"
+                style="@style/baseLayoutMWStyle"
+                android:layout_marginTop="30dp" />
+
+            <!-- 点评 -->
+
+            <include
+                android:id="@id/travel_detail_layout_comment"
+                layout="@layout/sub_travel_detail_comment" />
+
+            <!-- 导游信息 -->
+
+            <include
+                android:id="@id/travel_detail_layout_guide_info"
+                layout="@layout/sub_travel_guide_info" />
+
+            <!-- 行程二维码分享 -->
+
+            <include
+                android:id="@id/travel_detail_layout_qrcode"
+                layout="@layout/sub_travel_detail_qrcode" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@id/iv_travel_detail_menu"
+        style="@style/baseLayoutWWStyle"
+        android:layout_above="@id/travel_detail_layout_bottombar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/round_menu" />
+
+</RelativeLayout>

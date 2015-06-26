@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMWStyle" >
+
+    <ImageView
+        android:id="@id/iv_travel_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:background="@color/v31a9b6"
+        android:src="@drawable/list_default_cover" />
+
+    <RelativeLayout
+        style="@style/baseLayoutMWStyle"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shade_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@id/tv_travel_cost"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:maxEms="16"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/tv_scenic_cost_orientation"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/tv_travel_cost"
+            android:ellipsize="end"
+            android:paddingBottom="7dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/rmb"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@id/tv_travel_start_place"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_scenic_cost_orientation"
+            android:drawableLeft="@drawable/travel_start_from"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</FrameLayout>

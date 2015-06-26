@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:paddingTop="25dp" >
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/login_user" />
+
+        <EditText
+            android:id="@id/et_register_email_nickname"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/hint_register_key"
+            android:inputType="text"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColorHint="@color/vd0d0d0" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_margin_left_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/register_email" />
+
+        <EditText
+            android:id="@id/et_register_email"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="@string/hint_register_email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColorHint="@color/vd0d0d0" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_margin_left_40" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-1dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_register_phone_key"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/login_key" />
+
+        <com.kooniao.travel.customwidget.SelectedImgeView
+            android:id="@id/iv_register_email_key_control"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/login_key_invisiable" />
+
+        <EditText
+            android:id="@id/et_register_email_password"
+            style="@style/baseLayoutMMStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/iv_register_email_key_control"
+            android:layout_toRightOf="@id/iv_register_phone_key"
+            android:background="@null"
+            android:hint="@string/hint_register_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/vd0d0d0" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

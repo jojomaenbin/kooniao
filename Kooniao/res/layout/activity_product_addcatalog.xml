@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/baseLinearLayoutMMVerticalStyle"
+              android:background="@color/main_bg">
+
+    <RelativeLayout
+            android:id="@id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@+id/qxtj"
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/titlebar_backward_close_selector"/>
+
+        <TextView
+                android:id="@id/title"
+                style="@style/baseLayoutWMStyle"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/product_newaddcatalogs"
+                android:textColor="@color/v020202"
+                android:textSize="18sp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tjbq"
+                android:background="@drawable/right_check"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/divider_line_bg"/>
+    <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:background="@color/white"
+            android:padding="15dp" >
+
+        <TextView
+                style="@style/baseLayoutWWStyle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/product_catalogs_name"
+                android:textColor="@color/v323232"
+                android:textSize="16sp" />
+
+        <EditText
+                android:id="@+id/et_catalog_name"
+                style="@style/baseLayoutMMStyle"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/product_input_catalogs_name"
+                android:singleLine="true"
+                android:maxLength="8"
+                android:textColor="@color/v909090"
+                android:textColorHint="@color/vd0d0d0"
+                android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:background="@color/white" >
+
+        <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/product_showable"
+                android:textColor="@color/v323232"
+                android:textSize="16sp" />
+
+        <com.kooniao.travel.view.materialdesign.SwitchButton
+                android:id="@+id/catalog_showable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:checked="true"
+                android:text="New Switch" />
+    </LinearLayout>
+    <TextView
+            style="@style/baseLayoutWWStyle"
+            android:layout_margin="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/product_catalog_tag"
+            android:textColor="@color/v707070"
+            android:textSize="14sp" />
+    <EditText
+            android:id="@+id/catalog_tag"
+            style="@style/baseLayoutMMStyle"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:gravity="top"
+            android:hint="@string/remark_hint"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/v909090"
+            android:textColorHint="@color/vd0d0d0"
+            android:textSize="16sp" />
+
+</LinearLayout>

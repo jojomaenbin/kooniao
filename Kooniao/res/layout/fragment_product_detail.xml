@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/white"
+    android:paddingBottom="60dp"
+    android:scrollbars="none" >
+
+    <LinearLayout style="@style/baseLinearLayoutMMVerticalStyle" >
+
+        <LinearLayout
+            android:id="@id/ll_address"
+            style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <TextView
+                android:id="@id/tv_address"
+                style="@style/baseLayoutMWStyle"
+                android:drawableLeft="@drawable/address_gray"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/v16b8eb"
+                android:textSize="15sp" />
+
+            <include layout="@layout/divider_line_margin_left_right_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_time"
+            style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <TextView
+                android:id="@id/tv_time"
+                style="@style/baseLayoutMWStyle"
+                android:drawableLeft="@drawable/time_gray"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="15sp" />
+
+            <include layout="@layout/divider_line_margin_left_right_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_type"
+            style="@style/baseLinearLayoutMWVerticalStyle" >
+
+            <TextView
+                android:id="@id/tv_type"
+                style="@style/baseLayoutMWStyle"
+                android:drawableLeft="@drawable/type_gray"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/v020202"
+                android:textSize="15sp" />
+
+            <include layout="@layout/divider_line_full" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:background="@null"
+            android:padding="10dp" >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/v16b8eb" />
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:layout_marginLeft="7dp"
+                android:text="@string/product_desc"
+                android:textColor="@color/v020202"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <FrameLayout style="@style/baseLayoutMMStyle" >
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@id/webview"
+                style="@style/baseLayoutMMStyle"/>
+
+            <include layout="@layout/sub_no_data" />
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

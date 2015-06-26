@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/look_travel_rating"
+            android:textColor="@color/v020202"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@id/swipe_refresh_layout"
+        style="@style/baseLayoutMMStyle"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <FrameLayout style="@style/baseLayoutMMStyle" >
+
+            <ListView
+                android:id="@id/lv_product"
+                style="@style/normalListViewStyle"
+                android:layout_marginTop="20dp" />
+
+            <include layout="@layout/sub_no_data" />
+        </FrameLayout>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

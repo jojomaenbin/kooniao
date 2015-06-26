@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLayoutMMStyle"
+    android:background="@color/translucence_black_dark"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWVerticalStyle"
+        android:background="@color/white" >
+
+        <include layout="@layout/divider_line_full" />
+
+        <!-- 状态 -->
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="start"
+                android:text="@string/status"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@id/tv_onsell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/onsell"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@id/tv_shelf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/status_have_the_shelf"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/tv_sellout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/sellout"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <!-- 推荐 -->
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="start"
+                android:text="@string/recommend"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@id/tv_recommended"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/recommended"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@id/tv_not_recommend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/not_recommend"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/sellout"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <!-- 分销 -->
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="start"
+                android:text="@string/distribute"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@id/tv_setted"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/setted"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@id/tv_not_set"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/not_set"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/sellout"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <!-- 产品类型 -->
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWVerticalStyle"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/baseLayoutMWStyle"
+                android:gravity="start"
+                android:text="@string/product_type"
+                android:textColor="@color/v707070"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@id/tv_hotel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/hotel"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@id/tv_scenic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/category_scenic"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/tv_amusement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/category_amusement"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/tv_food"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/category_food"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMHorizontalStyle"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@id/tv_group_product"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/category_group_product"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@id/tv_line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_manage_filter_selector"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/line"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/book_text_selector"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_full" />
+
+        <TextView
+            android:id="@id/tv_reset"
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/product_manage_reset_button_selector"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:text="@string/reset"
+            android:textColor="@color/reset_text_color_selector"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@id/ll_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/blue_retancle_button_selector" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

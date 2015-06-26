@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kooniao.travel"
+    android:versionCode="7"
+    android:versionName="1.6.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="com.kooniao.travel.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.kooniao.travel.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.kooniao.travel.KooniaoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 百度地图服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- 百度地图秘钥 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="d7qpCa6mOgZKmGsFq659prPt" />
+        <!-- 腾讯sdk -->
+        <meta-data
+            android:name="QBSDKAppKey"
+            android:value="mkJwJjUGtSJhcYWoVAWS4kf5" />
+
+        <!-- 引导启动页 -->
+        <activity
+            android:name="com.kooniao.travel.SplashActivity_"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 一级目录底部bar -->
+        <activity
+            android:name="com.kooniao.travel.BottomTabBarActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <!-- 百度地图 -->
+        <activity
+            android:name="com.kooniao.travel.BaiDuMapActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 扫描 -->
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.kooniao.travel.mine.SettingActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 关于 -->
+        <activity
+            android:name="com.kooniao.travel.mine.AboutKooniaoActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 我的行程 -->
+        <activity
+            android:name="com.kooniao.travel.mine.MyTravelActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.kooniao.travel.mine.MyCollectActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 离线 -->
+        <activity
+            android:name="com.kooniao.travel.mine.OfflineActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 个人资料 -->
+        <activity
+            android:name="com.kooniao.travel.mine.PersonalDataActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 绑定邮箱 -->
+        <activity
+            android:name="com.kooniao.travel.mine.BindingEmailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 绑定手机 -->
+        <activity
+            android:name="com.kooniao.travel.mine.BindingPhoneActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 我的订单 -->
+        <activity
+            android:name="com.kooniao.travel.mine.MyOrderActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 修改用户名 -->
+        <activity
+            android:name="com.kooniao.travel.mine.UpdateUserNameActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 消息界面 -->
+        <activity
+            android:name="com.kooniao.travel.mine.MessageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 二级消息界面 -->
+        <activity
+            android:name="com.kooniao.travel.mine.SubMessageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 订单点评界面 -->
+        <activity
+            android:name="com.kooniao.travel.mine.OrderReviewActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 订单详情界面 -->
+        <activity
+            android:name="com.kooniao.travel.mine.UserOrderDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 浏览器 -->
+        <activity
+            android:name="com.kooniao.travel.WebBrowserActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 大图浏览 -->
+        <activity
+            android:name="com.kooniao.travel.ImageBrowseActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 登录 -->
+        <activity
+            android:name="com.kooniao.travel.user.LoginActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 注册 -->
+        <activity
+            android:name="com.kooniao.travel.user.RegisterActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 完善个人资料 -->
+        <activity
+            android:name="com.kooniao.travel.user.ImprovePersonDataActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.kooniao.travel.user.ForgetPasswordActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 忘记密码邮箱结果 -->
+        <activity
+            android:name="com.kooniao.travel.user.EmailResultActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 电话忘记密码 -->
+        <activity
+            android:name="com.kooniao.travel.user.ForgetPasswordByPhoneActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 角色申请 -->
+        <activity
+            android:name="com.kooniao.travel.user.RoleApplyActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 城市列表 -->
+        <activity
+            android:name="com.kooniao.travel.citylist.CityListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 地区列表 -->
+        <activity
+            android:name="com.kooniao.travel.citylist.AreaListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 地区选择子列表 -->
+        <activity
+            android:name="com.kooniao.travel.citylist.SubAreaListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 搜索 -->
+        <activity
+            android:name="com.kooniao.travel.home.SearchActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 选择套餐页 -->
+
+        <activity
+            android:name="com.kooniao.travel.home.SelectProductPackageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.kooniao.travel.home.DepositTypeActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 线路产品详情页 -->
+        <activity
+            android:name="com.kooniao.travel.home.LineProductDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 非线路产品详情页 -->
+        <activity
+            android:name="com.kooniao.travel.home.NonLineProductDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 组合产品详情页 -->
+        <activity
+            android:name="com.kooniao.travel.home.CombineProductDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 支付订单页 -->
+        <activity
+            android:name="com.kooniao.travel.home.OrderPayActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 订单查看、管理页 -->
+        <activity
+            android:name="com.kooniao.travel.store.OrderManageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 店铺设置 -->
+        <activity
+            android:name="com.kooniao.travel.store.StoreSettingActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 开店 -->
+        <activity
+            android:name="com.kooniao.travel.store.OpenStoreActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 资源库 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductLibraryActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 线路节点引用 -->
+        <activity
+            android:name="com.kooniao.travel.store.LineReferenceActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 公共节点引用 -->
+        <activity
+            android:name="com.kooniao.travel.store.PublicReferenceActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 库存定价 -->
+        <activity
+            android:name="com.kooniao.travel.store.InventoryPricingActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 分销设置 -->
+        <activity
+            android:name="com.kooniao.travel.store.DistributionSetActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 每日库存量设置 -->
+        <activity
+            android:name="com.kooniao.travel.store.AddDistributionActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 添加模板 -->
+        <activity
+            android:name="com.kooniao.travel.store.EverydayInventoryAccountActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 首页产品列表 -->
+        <activity
+            android:name="com.kooniao.travel.home.HomeProductListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 店铺产品列表 -->
+        <activity
+            android:name="com.kooniao.travel.store.StoreProductListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 产品管理 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductManageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 订单详情 -->
+        <activity
+            android:name="com.kooniao.travel.store.OrderDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 图片预览 -->
+        <activity
+            android:name="com.kooniao.travel.PhotoPreviewActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 更改店铺名称 -->
+        <activity
+            android:name="com.kooniao.travel.store.UpdateStoreNameActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 更改店铺名称 -->
+        <activity
+            android:name="com.kooniao.travel.store.UpdateStoreContactPhoneActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 店铺 -->
+        <activity
+            android:name="com.kooniao.travel.store.StoreActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 产品预订选择日期 -->
+        <activity
+            android:name="com.kooniao.travel.home.ProductBookingSelectDate_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 线路产品预订 -->
+        <activity
+            android:name="com.kooniao.travel.home.ProductBookingActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 产品预订完成 -->
+        <activity
+            android:name="com.kooniao.travel.home.ProductBookingCompleteActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 非线路产品预订 -->
+        <activity
+            android:name="com.kooniao.travel.home.NonLineProductBookingActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 销售统计 -->
+        <activity
+            android:name="com.kooniao.travel.store.SaleStatisticsActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 产品库 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductResourceLibActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 佣金管理 -->
+        <activity
+            android:name="com.kooniao.travel.store.CommissionManageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 佣金支付 -->
+        <activity
+            android:name="com.kooniao.travel.store.PayCommissionActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 佣金详细 -->
+        <activity
+            android:name="com.kooniao.travel.store.CommissionDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 店铺客户管理 -->
+        <activity
+            android:name="com.kooniao.travel.store.StoreClientManageActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 店铺客户详细页 -->
+        <activity
+            android:name="com.kooniao.travel.store.StoreClientDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 发现主页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.TravelDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 回复评论 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.CommentReplyActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 导游行程列表页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.GuideTravelListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 行程反馈页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.TravelFeedbackActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 行程反馈列表页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.TravelFeedbackListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 团单操作页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.MassSingleOperationActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 发送信息编辑页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.MassTextingActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 短信模板页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.MessageTemplateActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 点名详情页 -->
+        <activity
+            android:name="com.kooniao.travel.discovery.RollCallDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 附近详情页 -->
+        <activity
+            android:name="com.kooniao.travel.around.AroundDetailActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 附近列表页 -->
+        <activity
+            android:name="com.kooniao.travel.around.AroundListActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name" />
+        <!-- 参与人信息页 -->
+        <activity
+            android:name="com.kooniao.travel.home.ParticipantInfoActivity_"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 产品分类 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductCategoryActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 产品信息 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductInfoActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 分类 -->
+        <activity
+            android:name="com.kooniao.travel.store.CategoryActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 产品标签 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductTabActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 产品目录 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductCatalogActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 添加目录 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductAddCatalogActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 选择组合 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductAddSelectActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 选择星级 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductStarLevelActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 产品介绍 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductIntroduceActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 产品编辑 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductEditActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 目的地编辑 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductAreaEditActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 产品介绍浏览页 -->
+        <activity
+            android:name="com.kooniao.travel.store.ProductIntroduceBrowserActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 参与人信息浏览页 -->
+        <activity
+            android:name="com.kooniao.travel.mine.ParticipantInfoShowActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <!-- 取消订单页 -->
+        <activity
+            android:name="com.kooniao.travel.mine.OrderCancelActivity_"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+
+        <!-- 极光推送 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.kooniao.travel" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.kooniao.travel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.kooniao.travel.receiver.JPushReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.kooniao.travel" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- 值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="0c683e6f2f48196357a6002a" />
+
+        <!-- ShareSDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 闹钟服务 -->
+        <receiver
+            android:name="com.kooniao.travel.receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+    </application>
+
+</manifest>

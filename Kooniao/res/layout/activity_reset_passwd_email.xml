@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/reset_password_email"
+            android:textColor="@color/v020202"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <include layout="@layout/divider_line_full"/>
+
+    <TextView
+        android:id="@id/tv_register_email_tips"
+        style="@style/baseLayoutWWStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/reset_password_email_tips_one"
+        android:textColor="@color/v909090"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        style="@style/baseLinearLayoutMWHorizontalStyle"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/baseLayoutWWStyle"
+            android:text="@string/reset_password_email_tips_two"
+            android:textColor="@color/v909090"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/tv_register_email"
+            style="@style/baseLayoutWWStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/v16b8eb"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/bt_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/blue_round_button_selector"
+        android:text="@string/accept"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

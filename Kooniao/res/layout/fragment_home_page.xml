@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle" >
+
+    <include
+        android:id="@id/titlebar_main"
+        layout="@layout/home_page_title_bar" />
+
+    <include layout="@layout/divider_line_full" />
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@id/swipe_refresh_layout"
+        style="@style/baseLayoutMMStyle" >
+
+        <FrameLayout style="@style/baseLayoutMMStyle" >
+
+            <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                android:id="@id/sticky_lv_product"
+                style="@style/baseLayoutMMStyle"
+                android:clipToPadding="false"
+                android:drawSelectorOnTop="true"
+                android:fastScrollEnabled="false"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                style="@style/baseLinearLayoutMMVerticalStyle"
+                android:paddingTop="180dp" >
+
+                <include layout="@layout/sub_home_page_no_data" />
+            </LinearLayout>
+        </FrameLayout>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

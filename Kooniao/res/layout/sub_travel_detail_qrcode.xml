@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@null"
+    android:paddingBottom="50dp"
+    android:paddingTop="50dp" >
+
+    <ImageView
+        android:id="@id/iv_travel_detail_qrcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:src="@drawable/list_default_cover" />
+
+    <TextView
+        style="@style/baseLayoutWWStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:text="@string/qrcode_share"
+        android:textColor="@color/v909090"
+        android:textSize="16sp" />
+
+</LinearLayout>

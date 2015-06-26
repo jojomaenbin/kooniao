@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/baseLinearLayoutMWVerticalStyle"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@id/tv_area_title"
+        style="@style/baseLayoutMWStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/v020202"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
+
+    <include layout="@layout/divider_line_full" />
+
+</LinearLayout>

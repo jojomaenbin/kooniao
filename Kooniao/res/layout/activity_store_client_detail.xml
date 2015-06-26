@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMVerticalStyle"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/iv_go_back"
+            style="@style/baseLayoutWWStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/titlebar_backward_kooniao_selector" />
+
+        <TextView
+            style="@style/baseLayoutWMStyle"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/store_client_detail"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/iv_store"
+            style="@style/baseLayoutWWStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/open_a_store_selector" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line_full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/v5d7785"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@id/tv_client_name"
+            style="@style/baseLayoutMWStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/cilect_detail_people_icon"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <include layout="@layout/divider_line_white_margin_left_30" />
+
+        <LinearLayout
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/mobile_colon"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_client_contact_phone"
+                style="@style/baseLayoutMWStyle"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_email"
+            style="@style/baseLinearLayoutMWHorizontalStyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                style="@style/baseLayoutWWStyle"
+                android:text="@string/email_add"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/tv_client_contact_email"
+                style="@style/baseLayoutMWStyle"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/listview"
+        style="@style/normalListViewStyle"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

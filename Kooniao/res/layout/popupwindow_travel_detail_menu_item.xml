@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/baseLinearLayoutMMHorizontalStyle"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <LinearLayout
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@id/v_popupmenu_vertical_top"
+            android:layout_width="2dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white" />
+
+        <ImageView
+            style="@style/baseLayoutWWStyle"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/popupwindow_menu_day" />
+
+        <View
+            android:id="@id/v_popupmenu_vertical_bottom"
+            android:layout_width="2dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/tv_travel_detail_popupmenu_day"
+        style="@style/baseLayoutMMStyle"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
